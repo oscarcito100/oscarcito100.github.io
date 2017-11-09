@@ -1,0 +1,40 @@
+/* SKILLS SECTION */
+
+/* skills section container */
+#skills {
+    background-image: url("../pictures/code.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+	}
+/* container-fluid to place the gradient over the background image */
+#containerSkills {
+    background: -webkit-linear-gradient(left top, ##2e61c3, #b717a3); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #2e61c3, #b717a3); /* Standard syntax */
+ 	mix-blend-mode: hard-light;	/* allow to place the gradient over the background image */
+	padding: 60px 0;
+}
+/* styling the 5 headers */
+.skillsHeaders {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+/* ul */
+.skillsList {
+	list-style-type: none;	
+	margin: auto 20px 20px 20px;
+}
+/* li */
+.skill {
+	color: #ffffff;
+	font-size: 20px;
+}
+/* style the glyphicon star */
+.glyphiconSkill {
+	color: gold;
+}

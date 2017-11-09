@@ -1,0 +1,68 @@
+/* NAVBAR */
+	#mainNavbar {
+	  height: 60px;
+	}
+	#mainNavbar .navbar-nav .active a.navLinks {
+	  background: brown;
+	  color: black;	
+	  border-bottom: 4px solid grey;		  
+	}
+	#mainNavbar .navbar-nav .active a.navLinks:hover {
+      cursor: not-allowed;	
+	  background: brown;
+	  color: black;	  
+	}
+	#mainNavbar .navbar-nav a.navLinks:hover {
+	  background: grey;
+	  border-bottom: 4px solid brown;
+      color: black;	
+	  transition: all 0.3s ease-in-out;	  
+	}
+	/*
+	.navbar-fixed-top {
+	  min-height: 80px;
+	  line-height: 80px;				
+	}
+	.navbar-nav > li > a {
+	  padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 80px;
+	font-size: 16px;
+	}
+	.navbar-brand {
+	height: 100%;
+	}
+    .navbar-brand img {
+	height: 50px;
+	}
+	.navbar-default .navbar-nav .active a {
+	background: none;
+	box-shadow: none;				
+	}
+	.navbar-default .navbar-nav .active a:hover {
+	background: none;
+	}			
+	.navbar-default .navbar-nav a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 20%;
+	height: 1px;
+	border-bottom: 4px solid #27AAE1;
+	opacity: 0;
+	transition: all 0.1s ease-in-out;
+	} 
+	.navbar-default .navbar-nav li:nth-of-type(3n-1) a:after {
+	border-color: #D7577E;
+	}
+	.navbar-default .navbar-nav li:nth-of-type(3n) a:after {
+	border-color: #3859A1;
+	}			
+	.navbar-default .navbar-nav a:hover:after, .navbar-default .navbar-nav .active a:after {
+	  bottom: 20px;
+      width: 50%;
+	  opacity: 1;
+	}*/

@@ -1,0 +1,106 @@
+/* CONTACT section */
+	/* container of the whole section */
+	#contact {
+      background-image: url("../pictures/computer.jpg");
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0.9;
+	}
+	/* container for writing the contact area */
+	#contactContainer {
+	  margin: 40px auto;
+	  width: 70%;
+	  padding: 15px;
+	}
+	/* the 3 headers of the content */
+	.contactHeaders {
+	  color: white;
+	  font-weight: bold;
+	}
+	/* the 3 inputs and the textarea of the contact's form*/
+	.form-control {	  
+	  border-radius: 20px/5px;
+      box-sizing: border-box; /* padding and borders are included in the total width and height of the elements */
+      border-bottom: 2px solid brown;
+      box-shadow: none;	  
+	}
+	.form-control:focus {
+	  border-bottom: 2px solid grey;
+	}
+	/* the 2 buttons of the contact's form */
+	.btnInputs {
+	  border: 2px solid brown;
+	  border-radius: 20px/5px;
+	  width: 30%;
+	  margin: 0 8%;
+	  background-color: white;
+	  color: brown;
+	}
+	.btnInputs:hover {
+	  background-color: brown;
+	  color: white;
+	  border: 2px solid white;
+	}
+	/* making the list inline */
+	.socialMediaList {
+	  display: inline;
+	  margin: 15px;
+	}
+	/* Linkedin logo*/
+	#linkedin {
+	  background-color: white;
+	  color: #007bb6;
+	  border-radius: 25%;
+	}
+	#linkedin:hover {
+	  background-color: #007bb6;
+	  color: white;
+	}
+	/* Facebook logo */
+	#facebook {
+	  background-color: white;
+	  color: #3B5998;
+	  border-radius: 25%;	  
+	}
+	#facebook:hover {
+	  background-color: #3B5998;
+	  color: white;	  
+	}
+	/* Twitter logo */
+	#twitter {
+	  background-color: white;
+	  color: #33CCFF;
+	  border-radius: 25%;
+	}
+	#twitter:hover {
+	  background-color: #33CCFF;
+	  color: white;	  	  
+	}
+	/* Github logo */
+	#github {
+	  background-color: white;
+	  color: #000000;
+	  border-radius: 25%;
+	}
+	#github:hover {
+	  background-color: #000000;
+	  color: white;	  
+	}
+	/* FreeCodeCamp logo */
+	#freeCodeCamp {
+	  background-color: white;
+	  color: #00ff00;
+	  border-radius: 25%;	  
+	}
+	#freeCodeCamp:hover {
+	  background-color: #00ff00;
+	  color: white;	  
+	}
+	/* list of social media logos */
+	.fa-ul {
+	margin-top: 40px;
+	}
