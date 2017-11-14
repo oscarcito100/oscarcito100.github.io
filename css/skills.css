@@ -11,10 +11,10 @@
 	}
 /* container-fluid to place the gradient over the background image */
 #containerSkills {
-    background: -webkit-linear-gradient(left top, ##2e61c3, #b717a3); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to bottom right, #2e61c3, #b717a3); /* Standard syntax */
+    background: -webkit-linear-gradient(##2e61c3, #b717a3); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(b#2e61c3, #b717a3); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2e61c3, #b717a3); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2e61c3, #b717a3); /* Standard syntax */
  	mix-blend-mode: hard-light;	/* allow to place the gradient over the background image */
 	padding: 60px 0;
 }
@@ -24,12 +24,12 @@
 	font-weight: bold;
 	text-align: center;
 }
-/* ul */
+/* <ul>  */
 .skillsList {
 	list-style-type: none;	
 	margin: auto 20px 20px 20px;
 }
-/* li */
+/* <li> */
 .skill {
 	color: #ffffff;
 	font-size: 20px;

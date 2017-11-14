@@ -1,0 +1,15 @@
+/* FOOTER SECTION */
+
+/* container */
+footer {
+	height: 200px;
+}
+/* each column of the footer */
+.footerBody {
+	margin-top: 60px;	
+}
+/* every <li> of the social media list */
+.footerSocialMediaList {
+	display: inline;	
+	list-style-type: none;
+}
