@@ -1,68 +1,65 @@
 /* NAVBAR */
-	#mainNavbar {
-	  height: 60px;
+/*  all <nav> */
+#mainNavbar {
+	height: 60px;
+	background-color: #4d0028; /* kind of lila*/
+}
+/* each link of the nav */
+#mainNavbar .navbar-nav a.navLinks {
+    color: #ffffff;	/* lila */
+    font-size: 20px;	  
+}
+#mainNavbar .navbar-nav a.navLinks:hover {
+	background: #ffffff;
+    color: #000000;	/* black */
+	border-bottom: 4px solid #000000;
+	border-radius: 20px/5px;
+	transition: all 0.1s ease-in-out;	  
+}
+/* link that is active */
+#mainNavbar .navbar-nav .active a.navLinks {
+	background: #666699; 
+	color: #000000;	
+	border-bottom: 4px solid #000000;	
+	border-radius: 20px/5px;	
+}
+#mainNavbar .navbar-nav .active a.navLinks:hover {	
+	background: #ffffff;
+    color: #000000;	  
+}
+/* container for the links, except the navbar-brand*/
+#navbarLinks {
+    margin-top: 10px;
+}
+/* navbar-brand name */
+#mainNavbar .navbar-brand {
+    color: #ffffff;	
+    font-size: 20px;	
+}
+/* style the button-toggle when is collpased */
+#mainNavbar .navbar-toggle:hover {
+	background-color: #ffffff;
+}
+#mainNavbar .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#mainNavbar .navbar-toggle:hover .icon-bar {
+	background-color: #4d0028;
+}
+#mainNavbar .navbar-toggle:active {
+	background-color: #666699; 
+}
+#mainNavbar .navbar-toggle:active .icon-bar {
+	background-color: #000000; 
+}
+/* media queries */
+@media screen and (max-width: 768px) {
+	.navbar-header {
+
 	}
-	#mainNavbar .navbar-nav .active a.navLinks {
-	  background: brown;
-	  color: black;	
-	  border-bottom: 4px solid grey;		  
+	#navbarLinks {
+		background-color: #4d0028;
+		border-radius: 20px/5px;
+        width: 60%;		
 	}
-	#mainNavbar .navbar-nav .active a.navLinks:hover {
-      cursor: not-allowed;	
-	  background: brown;
-	  color: black;	  
-	}
-	#mainNavbar .navbar-nav a.navLinks:hover {
-	  background: grey;
-	  border-bottom: 4px solid brown;
-      color: black;	
-	  transition: all 0.3s ease-in-out;	  
-	}
-	/*
-	.navbar-fixed-top {
-	  min-height: 80px;
-	  line-height: 80px;				
-	}
-	.navbar-nav > li > a {
-	  padding-top: 0px;
-	padding-bottom: 0px;
-	line-height: 80px;
-	font-size: 16px;
-	}
-	.navbar-brand {
-	height: 100%;
-	}
-    .navbar-brand img {
-	height: 50px;
-	}
-	.navbar-default .navbar-nav .active a {
-	background: none;
-	box-shadow: none;				
-	}
-	.navbar-default .navbar-nav .active a:hover {
-	background: none;
-	}			
-	.navbar-default .navbar-nav a:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 20%;
-	height: 1px;
-	border-bottom: 4px solid #27AAE1;
-	opacity: 0;
-	transition: all 0.1s ease-in-out;
-	} 
-	.navbar-default .navbar-nav li:nth-of-type(3n-1) a:after {
-	border-color: #D7577E;
-	}
-	.navbar-default .navbar-nav li:nth-of-type(3n) a:after {
-	border-color: #3859A1;
-	}			
-	.navbar-default .navbar-nav a:hover:after, .navbar-default .navbar-nav .active a:after {
-	  bottom: 20px;
-      width: 50%;
-	  opacity: 1;
-	}*/
+}
