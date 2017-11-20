@@ -2,25 +2,23 @@
 
 /* Portfolio section container */
 #portfolio {
-	background: red;
-	height: auto;
+	background: red; /* change it */
 	padding: 60px 0;
 }	
 /* container for the projects */
 .card {
 	position: relative;
 	width: 100%;
-	margin: auto;
-	background-color: white;
+	background-color: #ffffff; /* white, so when it is ovelaid the color is not as the #portfolio background */
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);	
 	-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);	 
-	margin: 20px 10px;
+	margin: 20px;
 }	
 /* portfolio's images */
 .portfolioImages {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: block;
 }	
 /* container hidden within the card */
@@ -30,9 +28,9 @@
 	left: 0;
 	opacity: 0;
 	padding: 20px;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out; /* i like more withoout it */
 }	
-/* show the container when the card is hovered*/
+/* show the container .overlay when the card is hovered*/
 .card:hover .overlay {
 	opacity: 1;
 }	
@@ -40,23 +38,24 @@
 .card:hover .portfolioImages {
 	opacity: 0.7;
 }
-/* style the text in the overlay container */
+/* style the text in the .overlay container */
 .overlayText {
 	color: white;
 	text-align: justify;	  
 }
-/* style the buttons */
+/* style the buttons of .overlay */
 .overlayButtons {
-	border: 1px solid brown;
-	background-color: white;
-	color: brown;
+	border: 2px solid #4d0028; /* navbar color */
+	background-color: #ffffff;
+	border-radius: 20px/5px;
+	color: #4d0028;
 	margin: 20px;
 	width: 35%;
 }
 .overlayButtons:hover {
-	border: 1px solid white;
-    color: white;
-    background-color: brown;	  
+	border: 2px solid #ffffff; /* white */
+    color: #ffffff;
+    background-color: #4d0028;	  
 }	
 /* style the caption of the card */
 .caption {
@@ -67,7 +66,7 @@
 	height: auto;
 }	
 /* style the name of the project */
-.portfolioHeaders {
+.projectName {
 	font-weight: bold;
 }
 /* style the images of the techlogy used */
