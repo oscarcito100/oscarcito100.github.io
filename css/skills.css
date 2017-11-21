@@ -11,18 +11,42 @@
 	}
 /* container-fluid to place the gradient over the background image */
 #containerSkills {
-    background: -webkit-linear-gradient(##2e61c3, #b717a3); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(b#2e61c3, #b717a3); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#2e61c3, #b717a3); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#2e61c3, #b717a3); /* Standard syntax */
+    background: -webkit-linear-gradient(left top, #2e61c3, #b717a3); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #2e61c3, #b717a3); /* Standard syntax */
  	mix-blend-mode: hard-light;	/* allow to place the gradient over the background image */
-	padding: 60px 0;
+	padding: 55px 0 40px 0;
 }
 /* styling the 5 headers */
 .skillsHeaders {
 	color: white;
 	font-weight: bold;
+    text-shadow: 5px 5px 5px black;
 	text-align: center;
+}
+/* <hr> */
+#skillsHrLine {
+	width: 25%;
+	height: 5px;
+	color: #FFFFFF;
+	margin-top: 0;	
+}
+/* <hr> subheadings */
+.skillsHrLine2 {
+	width: 75%;
+	height: 5px;
+	color: #FFFFFF;
+	margin-top: 0;	
+}
+/* styling for tablets and phones */
+@media screen and  (max-width: 768px) {
+	#containerSkills {
+		padding:60px 0 30px 0;	
+	}
+	#skillsHrLine {
+		width: 50%;	
+	}
 }
 /* <ul>  */
 .skillsList {

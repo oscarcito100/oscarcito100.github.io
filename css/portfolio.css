@@ -2,9 +2,22 @@
 
 /* Portfolio section container */
 #portfolio {
-	background: red; /* change it */
-	padding: 60px 0;
+	background: #cc0000; /* transparent red */
+	padding: 55px 0 40px 0;
 }	
+/* header */
+#portfolioHeader {
+	color: #ffffff;
+	font-weight: bold;
+    text-shadow: 5px 5px 5px #000000;    	
+}
+/* <hr> */
+#portfolioHrLine {
+	width: 30%;
+	height: 5px;
+	color: #FFFFFF;
+	margin-top: 0;	
+}
 /* container for the projects */
 .card {
 	position: relative;
@@ -13,7 +26,7 @@
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);	
 	-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);	 
-	margin: 20px;
+	margin-top: 20px;
 }	
 /* portfolio's images */
 .portfolioImages {
@@ -27,7 +40,7 @@
 	top: 0;
 	left: 0;
 	opacity: 0;
-	padding: 20px;
+	padding: 10px 20px 0 20px;
 	transition: 0.5s ease-in-out; /* i like more withoout it */
 }	
 /* show the container .overlay when the card is hovered*/
@@ -49,8 +62,8 @@
 	background-color: #ffffff;
 	border-radius: 20px/5px;
 	color: #4d0028;
-	margin: 20px;
-	width: 35%;
+	margin: 10px;
+	width: 40%;
 }
 .overlayButtons:hover {
 	border: 2px solid #ffffff; /* white */
@@ -72,4 +85,21 @@
 /* style the images of the techlogy used */
 .technologyLogos {
     display: inline;
+}
+/* styling in tablets and phones */
+@media screen and (max-width: 768px) {
+	#portfolioHeader {
+		font-size: 30px; /* 2em by default */
+	}
+	#portfolioHrLine {
+		width: 90%;
+	}
+	.overlayText {
+		font-size: 12px;
+        line-height: 1.25;
+	}
+	.overlayButtons  {
+        font-size: 12px;
+        padding: 6px;
+	}
 }

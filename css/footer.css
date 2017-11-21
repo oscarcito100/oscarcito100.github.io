@@ -6,7 +6,7 @@ footer {
 }
 /* each column of the footer */
 .footerBody {
-	margin-top: 60px;	
+	margin: 60px;	
 }
 /* every <li> of the social media list */
 .footerSocialMediaList {
