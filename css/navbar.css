@@ -3,30 +3,43 @@
 #mainNavbar {
 	height: 60px;
 	background-color: #4d0028; /* kind of lila*/
-	width: 100%;
+	margin: 0;
+}
+/* navbar header container */
+#mainNavbar .navbar-header {
+	height: 60px;
+}
+/* logo of the page */
+#mainNavbar a.navbar-brand {
+	padding: 10px 15px;
+}
+/* text under the logo */
+#mainNavbar a.navbar-brand h6 {
+	margin-top: 5px;
+	text-align: center;
 }
 /* each link of the nav */
 #mainNavbar .navbar-nav a.navLinks {
     color: #ffffff;	/* lila */
-    font-size: 20px;	  
+    font-size: 20px;
 }
 #mainNavbar .navbar-nav a.navLinks:hover {
 	background: #ffffff;
     color: #000000;	/* black */
 	border-bottom: 4px solid #000000;
 	border-radius: 20px/5px;
-	transition: all 0.1s ease-in-out;	  
+	transition: all 0.1s ease-in-out;
 }
 /* link that is active */
 #mainNavbar .navbar-nav .active a.navLinks {
-	background: #666699; 
-	color: #000000;	
-	border-bottom: 4px solid #000000;	
-	border-radius: 20px/5px;	
+	background: #666699;
+	color: #000000;
+	border-bottom: 4px solid #000000;
+	border-radius: 20px/5px;
 }
-#mainNavbar .navbar-nav .active a.navLinks:hover {	
+#mainNavbar .navbar-nav .active a.navLinks:hover {
 	background: #ffffff;
-    color: #000000;	  
+    color: #000000;
 }
 /* container for the links, except the navbar-brand*/
 #navbarLinks {
@@ -34,8 +47,8 @@
 }
 /* navbar-brand name */
 #mainNavbar .navbar-brand {
-    color: #ffffff;	
-    font-size: 20px;	
+    color: #ffffff;
+    font-size: 20px;
 }
 /* style the button-toggle when is collpased */
 #mainNavbar .navbar-toggle:hover {
@@ -48,16 +61,16 @@
 	background-color: #4d0028;
 }
 #mainNavbar .navbar-toggle:active {
-	background-color: #666699; 
+	background-color: #666699;
 }
 #mainNavbar .navbar-toggle:active .icon-bar {
-	background-color: #000000; 
+	background-color: #000000;
 }
 /* media queries */
 @media screen and (max-width: 768px) {
 	#navbarLinks {
 		background-color: #4d0028;
 		border-radius: 20px/5px;
-        width: 60%;		
+        width: 60%;
 	}
 }

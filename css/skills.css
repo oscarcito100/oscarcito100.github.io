@@ -2,7 +2,7 @@
 
 /* skills section container */
 #skills {
-    background-image: url("../pictures/code.jpg");
+  background-image: url("../pictures/code.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -11,18 +11,18 @@
 	}
 /* container-fluid to place the gradient over the background image */
 #containerSkills {
-    background: -webkit-linear-gradient(left top, #2e61c3, #b717a3); /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left top, #2e61c3, #b717a3); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(bottom right, #2e61c3, #b717a3); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to bottom right, #2e61c3, #b717a3); /* Standard syntax */
  	mix-blend-mode: hard-light;	/* allow to place the gradient over the background image */
-	padding: 55px 0 40px 0;
+	padding: 55px 15px 40px 15px;
 }
 /* styling the 5 headers */
 .skillsHeaders {
 	color: white;
 	font-weight: bold;
-    text-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px black;
 	text-align: center;
 }
 /* <hr> */
@@ -30,28 +30,23 @@
 	width: 25%;
 	height: 5px;
 	color: #FFFFFF;
-	margin-top: 0;	
+	margin-top: 0;
 }
-/* <hr> subheadings */
-.skillsHrLine2 {
-	width: 75%;
-	height: 5px;
-	color: #FFFFFF;
-	margin-top: 0;	
+/* panel to container the skills */
+.panel {
+  background-color: red;
+  margin: 20px 5%;
+  text-align: center;
 }
-/* styling for tablets and phones */
-@media screen and  (max-width: 768px) {
-	#containerSkills {
-		padding:60px 0 30px 0;	
-	}
-	#skillsHrLine {
-		width: 50%;	
-	}
+.panel-heading {
+  border-bottom: 1px solid #ffffff;
 }
 /* <ul>  */
 .skillsList {
-	list-style-type: none;	
-	margin: auto 20px 20px 20px;
+	list-style-type: none;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 0;
 }
 /* <li> */
 .skill {
@@ -61,4 +56,16 @@
 /* style the glyphicon star */
 .glyphiconSkill {
 	color: gold;
+}
+/* styling for tablets and phones */
+@media screen and  (max-width: 768px) {
+	#containerSkills {
+		padding:60px 0 30px 0;
+	}
+	#skillsHrLine {
+		width: 50%;
+	}
+  .panel {
+    margin: 10%;
+  }
 }

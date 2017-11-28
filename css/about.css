@@ -1,4 +1,31 @@
-/* ABOUT */
-	#about {
-	  background: grey;
+/* ABOUT SECTION */
+
+#about {
+	background: #ffffff;
 	}
+#containerAbout {
+	background-image: url("../pictures/pergamino.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 55px 15px 40px 15px;
+}
+#aboutHeader {
+	color: #ffffff;
+	font-weight: bold;
+  text-shadow: 5px 5px 5px #000000;
+}
+#aboutHrLine {
+	width: 20%;
+	height: 5px;
+	color: #FFFFFF;
+	margin-top: 0;
+}
+.aboutText {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size:	16px;
+	text-align: justify;
+	text-indent: 30px;
+}

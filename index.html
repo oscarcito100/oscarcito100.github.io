@@ -5,19 +5,19 @@
 <head>
   <!-- Title on the tab -->
   <title>Oscar Germade: Web Developer and Trader</title>
-  
+
   <!-- Metadata -->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="Oscar Ruben Germade-Gonzalez Rios Portfolio"/>
   <meta name="author" content="Oscar Ruben Germade-Gonzalez Rios"/>
   <meta name="keywords" content="Oscar Germade portfolio"/>
-  
+
   <!-- Bootstrap files -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
   <!-- FontAwsome Icons-->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
 
@@ -25,10 +25,11 @@
   <link rel="stylesheet" href="css/portfolio.css"/>
   <link rel="stylesheet" href="css/navbar.css"/>
   <link rel="stylesheet" href="css/home.css"/>
-  <link rel="stylesheet" href="css/about.css"/>  
-  <link rel="stylesheet" href="css/contact.css"/> 
-  <link rel="stylesheet" href="css/skills.css"/>  
-  <link rel="stylesheet" href="css/footer.css"/>  
+  <link rel="stylesheet" href="css/about.css"/>
+  <link rel="stylesheet" href="css/contact.css"/>
+  <link rel="stylesheet" href="css/skills.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+
   <style>
 /* GLOBAL STYLING */
     body {
@@ -45,63 +46,71 @@
 
 <!-- BODY -->
     <!-- Create Scrollable Area
-	     data-spy=scroll: selecting the scrollable area
+	   data-spy=scroll: selecting the scrollable area
 		 data-target: is the content related
-		 data-offset: pixels from top --> 
+		 data-offset: pixels from top -->
 <body data-spy="scroll" data-target="#mainNavbar" data-offset="200">
 
 <!-- NAVBAR -->
   <nav id="mainNavbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-	  <!-- navbar-header-->	
+
+	    <!-- navbar-header-->
       <div class="navbar-header">
-        <!-- Brand and toggle get grouped for better mobile display -->		   
-	    <a href="#home" class="navbar-brand">Oscar Germade</a>
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarLinks">
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
+        <!-- Brand and toggle get grouped for better mobile display -->
+	      <a href="#home" class="navbar-brand">Oscar Germade
+          <h6>Web developer</h6>
+        </a>
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarLinks">
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
         </button>
       </div>
-      <!-- navbar-collapse area: links to the content of each section of the <nav> in the scrollspy -->	  
-	  <div class="collapse navbar-collapse" id="navbarLinks"> 
-	    <ul class="nav navbar-nav">
-		  <li><a href="#home" class="navLinks">HOME</a></li>		
-		  <li><a href="#portfolio" class="navLinks">PORTFOLIO</a></li>
-		  <li><a href="#skills" class="navLinks">SKILLS</a></li>
-		  <li><a href="#about" class="navLinks">ABOUT</a></li>			  		  
-		  <li><a href="#contact" class="navLinks">CONTACT</a></li>
-        </ul>		 
+
+      <!-- navbar-collapse area: links to the content of each section of the <nav> in the scrollspy -->
+	    <div class="collapse navbar-collapse" id="navbarLinks">
+	      <ul class="nav navbar-nav">
+		      <li><a href="#home" class="navLinks">HOME</a></li>
+		      <li><a href="#portfolio" class="navLinks">PORTFOLIO</a></li>
+		      <li><a href="#skills" class="navLinks">SKILLS</a></li>
+		      <li><a href="#about" class="navLinks">ABOUT</a></li>
+		      <li><a href="#contact" class="navLinks">CONTACT</a></li>
+        </ul>
       </div>
     </div>
   </nav>
-  
+
 <!-- HOME -->
   <header id="home">
     <div class="container-fluid">
-	  <div class="row">
-	    <div id="homeRightContainer" class="col-sm-6 text-right">
+
+      <!-- create a row and 1st column -->
+	    <div class="row">
+	      <div id="homeRightContainer" class="col-sm-6 text-right">
           <h1 id="homeTitle">Hi world!</h1>
-	      <h4 id="homeSubTitle1">I'm Oscar Germade</h4>
-	      <h6 id="homeSubTitle2">Front End Web Developer<h6>		
-	      <h6 id="homeSubTitle3">Trader and Technical Analyst<h6>			  
-		</div>	  
-	    <div class="col-sm-6">
-	      <img id="oscarPhoto" class="img-responsive img-circle" src="pictures/oscar.jpg" width="50%" height="50%"/>		
-		</div>	  
-	  </div>
+	        <h4 id="homeSubTitle1">I'm Oscar Germade</h4>
+	        <h6 id="homeSubTitle2">Front End Web Developer<h6>
+	        <h6 id="homeSubTitle3">Trader and Technical Analyst<h6>
+		    </div>
+
+        <!-- 2nd column -->
+	      <div class="col-sm-6">
+	        <img id="oscarPhoto" class="img-responsive img-circle" src="pictures/oscar.jpg" width="50%" height="50%"/>
+		    </div>
+	    </div>
     </div>
   </header>
-  
+
 <!-- PORTFOLIO -->
   <section id="portfolio">
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" id="containerPortfolio">
       <h1 id="portfolioHeader">< PORTFOLIO /></h1>
 	  <hr id="portfolioHrLine">
 	  <div class="row">
 	    <div class="col-sm-4">
 	      <div class="card">
-            <img class="img-responsive portfolioImages" src="pictures/messiProject.png" alt="Lione Messi's Tribute Page" width="90%" height="500px"/>
+            <img class="img-responsive portfolioImages" src="pictures/messiProject.png" alt="Lione Messi's Tribute Page" width="100%" height="300px"/>
 		    <div class="overlay">
 		      <p class="overlayText">Web dedicated to Lionel Messi to check out his personal data, biography, stats and awards during his professional career.</p>
 		      <a class="btn btn-primary overlayButtons">See project</a>
@@ -113,7 +122,7 @@
 		      <div class="logos" title="Technologies used">
 			    <img class="img-responsive technologyLogos" src="pictures/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
 			    <img class="img-responsive technologyLogos" src="pictures/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
-			    <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>			  
+			    <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
 			  </div>
 	       </div>
 		  </div>
@@ -132,11 +141,11 @@
 		      <div class="logos" title="Technologies used">
 			    <img class="img-responsive technologyLogos" src="pictures/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
 			    <img class="img-responsive technologyLogos" src="pictures/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
-			    <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>			  
+			    <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
 			  </div>
 	       </div>
 		  </div>
-	    </div>	
+	    </div>
 	    <div class="col-sm-4">
 	      <div class="card">
             <img class="img-responsive portfolioImages" src="pictures/messiProject.png" alt="Lione Messi's Tribute Page" width="90%" height="500px"/>
@@ -151,156 +160,208 @@
 		      <div class="logos" title="Technologies used">
 			    <img class="img-responsive technologyLogos" src="pictures/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
 			    <img class="img-responsive technologyLogos" src="pictures/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
-			    <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>			  
+			    <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
 			  </div>
 	       </div>
 		  </div>
-	    </div>	  
+	    </div>
 	  </div>
-	</div>  
+	</div>
   </section>
-  
- <!-- SKILLS -->
+
+<!-- SKILLS -->
   <section id="skills">
     <div id="containerSkills" class="container-fluid">
-	  <h1 class="skillsHeaders">< SKILLS /></h1>
+	    <h1 class="skillsHeaders">< SKILLS /></h1>
       <hr id="skillsHrLine">
+
+      <!--Create a row and 1st column -->
       <div class="row">
-	    <div class="col-sm-3">
-	      <h3 class="skillsHeaders">TRADING PLATFORMS</h3>
-          <hr class="skillsHrLine2">
-		  <ul class="skillsList">
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> METATRADER 4</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> XSTATION 5</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> CQG</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> VISUAL CHART</li>		  
-		  </ul>  
-	    </div>	  
-	    <div class="col-sm-3">
-	      <h3 class="skillsHeaders">FINANCE</h3>
-          <hr class="skillsHrLine2">
-		  <ul class="skillsList">
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> DERIVATIVES</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> PORTFOLIO MANAGEMENT</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> QUANTITATIVE METHODS</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> FINANCIAL MARKETS</li>		  
-		  </ul>  
-	    </div>	 	
-	    <div class="col-sm-3">
-	      <h3 class="skillsHeaders">OTHER TOOLS</h3> 
-          <hr class="skillsHrLine2">
-		  <ul class="skillsList">
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> GIT</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> GITHUB</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> TERMINAL</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> GRANT</li>					
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JQUERY</li>		
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JSON</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> AJAX</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> API's</li>			
-		  </ul>
-	    </div>		
-	    <div class="col-sm-3">
-	      <h3 class="skillsHeaders">PROGRAMMING</h3> 
-          <hr class="skillsHrLine2">
-		  <ul class="skillsList">
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> HTML 5</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> CSS 3</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> BOOTSTRAP 4</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JAVASCRIPT</li>	
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> PHP</li>				
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> NODE.JS</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> EXPRESS.JS</li>	
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> ANGULAR.JS</li>	
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> MONGODB</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> SQL</li>
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> MYSQL</li>	
-		    <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JAVA</li>			
-		  </ul>
-	    </div>		
-	  </div>
-	</div>
+        <div class="col-sm-3">
+          <div class="panel panelSkills">
+            <div class="panel-heading">
+	            <h3 class="skillsHeaders">FRONT END</h3>
+            </div>
+            <div class="panel-body">
+		          <ul class="skillsList">
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> HTML 5</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> CSS 3</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> BOOTSTRAP 4</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JAVASCRIPT</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JQUERY</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> ANGULAR.JS</li>
+		          </ul>
+	          </div>
+          </div>
+        </div>
+
+        <!-- 2nd column -->
+        <div class="col-sm-3">
+          <div class="panel panelSkills">
+            <div class="panel-heading">
+	            <h3 class="skillsHeaders">BACK END and DB</h3>
+            </div>
+            <div class="panel-body">
+		          <ul class="skillsList">
+                <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> PHP</li>
+                <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> NODE.JS</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> EXPRESS.JS</li>
+  		          <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JAVA</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> MYSQL</li>
+                <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> MONGODB</li>
+		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> SQL</li>
+		          </ul>
+	          </div>
+          </div>
+        </div>
+
+         <!-- 3th column -->
+         <div class="col-sm-3">
+           <div class="panel panelSkills">
+             <div class="panel-heading">
+ 	            <h3 class="skillsHeaders">OTHER TOOLS</h3>
+             </div>
+             <div class="panel-body">
+ 		          <ul class="skillsList">
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> GIT</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> GITHUB</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> TERMINAL</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JQUERY</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JSON</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> AJAX</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> API's</li>
+ 		          </ul>
+ 	          </div>
+           </div>
+         </div>
+
+         <!-- 4th column -->
+         <div class="col-sm-3">
+           <div class="panel panelSkills">
+             <div class="panel-heading">
+ 	            <h3 class="skillsHeaders">FINANCE</h3>
+             </div>
+             <div class="panel-body">
+ 		          <ul class="skillsList">
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> FINANCIAL MARKETS</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> INVESTMENT</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> PORTFOLIO MANAGEMENT</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> FINANCIAL MARKETS</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> QUANTITATIVE METHODS</li>
+ 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> ETC...</li>
+ 		          </ul>
+ 	          </div>
+           </div>
+         </div>
+	     </div>
+	   </div>
   </section>
-  
+
 <!-- ABOUT -->
-  <section id="about" class="container-fluid text-center">
-    <h1>ABOUT</h1> 
-	<hr class="horizontalLine">	
-    <div class="row">
-	  <div class="col-sm-6">
-	    <p>I'm a junior web developer that enjoys working both on front end and back end. I am constantly learning new languages, 
-		framworks and tools, from building and maintaining websites to playing with APIs and databases in order to build modern 
-		web applications.</p>
-		<p>My strength is with HTML5 and CSS, along with Javascript, but I also enjoy working on the back end and try to expand my skills 
-		learning new frameworks, languages and tools, such as, NODE.JS, REACT or ANGULAR.JS.</p>
-		<p></p>
-	  </div>
-	  <div class="col-sm-6 thumbnail">
-	    <img id="" class="img-responsive" src="pictures/oscar.jpg" width="100%" height="500px"/>	  
-	  </div>	  
+  <section id="about">
+    <div id="containerAbout" class="container-fluid text-center">
+      <h1 id="aboutHeader">< ABOUT ME /></h1>
+	    <hr id="aboutHrLine">
+
+      <div class="row">
+	      <div class="col-sm-offset-3 col-sm-6">
+          <p class="aboutText"> I had never imagined that I would become a Full Stack Web Developer if you would have asked me where
+             I see myself working in the future. My love with this world came when I did a beginner HTML and CSS course in an Adult School in
+             London. I enjoyed some much that I decided to make a Master in Computing for Financial Markets at University of Stirling
+             to learn about programming, databases and softwate design related with the finance world. HOW CRAZY I WAS!!</p>
+          <p class="aboutText">To be honest, I think it was the right choice because with the time passing I started loving more programming
+             than financial markets. So that, on my way back to Spain y decided to focus and improve my programming skills to become an
+             Full Stack Web Developer. </p>
+          <p class="aboutText">In order to get this goal, I am working hard, doing some online courses in <a href="https://www.udemy.com" target="_blank"
+             title="Go to website"><b>'Udemy'</b></a>, tutorials in <a href="https://thenewboston.com/" target="_blank" title="Go to website">
+             <b>'The New Boston'</b></a> and projects in <a href="https://www.freecodecamp.org" target="_blank" title="Go to website">
+             <b>'FreeCodeCamp'</b></a> to post them into my portfolio web page.</p>
+          <p class="aboutText">My dissertation project was based on the development of a financial website where the users can watch stock data retrieve
+             from <a href="https://developer.yahoo.com/yql/console/" target="_blank" title="Go to website"><b>‘Yahoo’s API’</b></a>, perform technical analysis in charts provided by <a href="https://www.tradingview.com/" target="_blank" title="Go to website">
+             <b>‘Tradingview’</b></a>, and build and monitor his own portfolio. This project has
+             given me strong knowledge in website development, gaining experience in both front end and back end.</p>
+          <p class="aboutText">Once I ended up the Master, I did a internship at <a href="www.shimmylingerie.co.uk" target="_blank" title="Go to website"><b>
+             'Shimmy Lingerie'</b></a> in London for 3 months as a Junior Back End Developer. My functions were to create the <b>Rest Api</b>
+             with <b>Express.js</b> and <b>Node.js</b>, apart from creating the Database with <b>MongoDB</b> using Mongoose to model the data.</p>
+	        <p class="aboutText">After returning to Spain I worked as Junior Web Developer at <a href="https://lavidaenled.com" target="_blank" title="Go to website">
+            'La vida en Led'</a> for 3 months. This website was developed with Prestashop and my functions were to use the 'Administrator Interface'
+             in order to maintain the website, update all the existing products and upload new goods.</p>
+          <p class="aboutText">Forementioned my objective is to become a Full Stack Web Developer and for that to happend I am constantly learning new
+             languages, framworks and tools, from building and maintaining websites to playing with APIs and databases in order to build modern web applications.</p>
+		      <p class="aboutText">My strength is with <b>Html 5</b> and <b>Css 3</b> and <b>Bootstrap</b>, along with <b>Javascript</b>, but I also enjoy
+             working on the back end and try to expand my skills learning new frameworks like <b>Angular</b>, languages like <b>Php</b> and databases
+             like <b>MySql</b> o <b>MongoDB</b>.</p>
+  	    </div>
 	</div>
   </section>
-  
+
 <!-- CONTACT -->
   <section id="contact">
-    <div id="contactContainer" class="container-fluid text-center">
-	  <h1 class="contactHeader">< CONTACT ME /></h1>
-	  <hr id="contactHrLine">
-	  <div class="row">
-	    <div class="col-sm-6">
-          <h3 class="contactSubheaders">Send me an email</h3>		
-	      <form action="mailto:oscar.germadegonzalez@gmail.com" method="post" enctype="text/plain">
+    <div id="containerContact" class="container-fluid text-center">
+	    <h1 class="contactHeader">< CONTACT ME /></h1>
+	    <hr id="contactHrLine">
+
+      <!-- Create a row and 1st column -->
+	    <div class="row">
+	      <div class="col-sm-6">
+          <h3 class="contactSubheaders">Send me an email</h3>
+	        <form action="mailto:oscar.germadegonzalez@gmail.com" method="post" enctype="text/plain">
             <div class="form-group">
-	          <label for="name"></label>
+	            <label for="name"></label>
               <input type="text" class="form-control" name="name" placeholder="Your Name" required/>
-	          <label for="subject"></label>	  
+	            <label for="subject"></label>
               <input type="text" class="form-control" name="subject" placeholder="Your Subject"/>
-	          <label for="email"></label>	  
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required/>			  
-	          <label for="message"></label>
+	            <label for="email"></label>
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required/>
+	            <label for="message"></label>
               <textarea class="form-control" name="message" rows="6" cols="50" placeholder="Your Message"></textarea>
-			  <br>
-		      <input type="submit" value="Submit" class="btn btn-primary btnInputs"/>
-		      <input type="reset" value="Reset" class="btn btn-primary btnInputs"/>			  
-	        </div>	  
-	      </form>
-		</div>
-		<div class="col-sm-6">
+			        <br>
+		          <input type="submit" value="Submit" class="btn btn-primary btnInputs"/>
+		          <input type="reset" value="Reset" class="btn btn-primary btnInputs"/>
+	          </div>
+	        </form>
+		    </div>
+
+        <!--2nd column -->
+		    <div class="col-sm-6">
           <h3 class="contactSubheaders">Text me on media</h3>
-		  <div class="flex-container">
-              <li class="socialMediaList"><a href="https://www.linkedin.com/in/oscar-ruben-germade-gonzalez-r�os-6ba5aa51" target="_blank" title="Linkedin"><i id="linkedin" class="fa fa-fw fa-linkedin-square fa-4x" aria-hidden="true"></i></a></li>
-              <li class="socialMediaList"><a href="https://www.github.com/oscarcito100" target="_blank" title="Github"><i id="github" class="fa fa-fw fa-github-square fa-4x" aria-hidden="true"></i></a></li>
-              <li class="socialMediaList"><a href="https://www.facebook.com/oscarruben.germadegonzalezrios" target="_blank" title="Facebook"><i id="facebook" class="fa fa-fw fa-facebook-official fa-4x" aria-hidden="true"></i></a></li>		    		 
-		  </div>		 
-		  <ul class="fa-ul">
+		      <div class="flex-container">
+            <li class="socialMediaList"><a href="https://www.linkedin.com/in/oscar-ruben-germade-gonzalez-r�os-6ba5aa51" target="_blank" title="Linkedin"><i id="linkedin" class="fa fa-fw fa-linkedin-square fa-4x" aria-hidden="true"></i></a></li>
+            <li class="socialMediaList"><a href="https://www.github.com/oscarcito100" target="_blank" title="Github"><i id="github" class="fa fa-fw fa-github-square fa-4x" aria-hidden="true"></i></a></li>
+            <li class="socialMediaList"><a href="https://www.facebook.com/oscarruben.germadegonzalezrios" target="_blank" title="Facebook"><i id="facebook" class="fa fa-fw fa-facebook-official fa-4x" aria-hidden="true"></i></a></li>
+		      </div>
+		      <ul class="fa-ul">
             <li class="socialMediaList"><a href="https://www.twitter.com/oscarcito1986" target="_blank" title="Twitter"><i id="twitter" class="fa fa-fw fa-twitter-square fa-4x" aria-hidden="true"></i></a></li>
-			<li class="socialMediaList"><a href="https://www.freecodecamp.com/oscarcito100" target="_blank" title="FreeCodeCamp"><i id="freeCodeCamp" class="fa fa-fw fa-free-code-camp fa-4x" aria-hidden="true"></i></a></li>		  
-		  </ul>
-		</div>
+			      <li class="socialMediaList"><a href="https://www.freecodecamp.com/oscarcito100" target="_blank" title="FreeCodeCamp"><i id="freeCodeCamp" class="fa fa-fw fa-free-code-camp fa-4x" aria-hidden="true"></i></a></li>
+		      </ul>
+		    </div>
       </div>
-	</div>
+	  </div>
   </section>
- 
+
 <!-- FOOTER -->
   <footer>
     <div class="container-fluid text-center">
+
+      <!-- Create a row and 1st column -->
       <div class="row">
-	    <div class="col-sm-6 footerBody">
-          <p>Written and coded by <a href="https://www.freecodecamp.com/oscarcito100" target="_blank" id="">Oscar Germade. <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-		  <p>&copy All rights reserved. 2017</p>
-	    </div>
-	    <div class="col-sm-6 footerBody">
-	      <!-- social media links -->
-          <ul> 
-            <li class="footerSocialMediaList"><a href="https://www.linkedin.com/in/oscar-ruben-germade-gonzalez-r�os-6ba5aa51" target="_blank" title="Linkedin"><i id="linkedin" class="fa fa-fw fa-linkedin fa-4x" aria-hidden="true"></i></a></li>
-            <li class="footerSocialMediaList"><a href="https://www.github.com/oscarcito100" target="_blank" title="Github"><i id="github" class="fa fa-fw fa-github fa-4x" aria-hidden="true"></i></a></li>
-            <li class="footerSocialMediaList"><a href="https://www.facebook.com/oscarruben.germadegonzalezrios" target="_blank" title="Facebook"><i id="facebook" class="fa fa-fw fa-facebook-official fa-4x" aria-hidden="true"></i></a></li>
-            <li class="footerSocialMediaList"><a href="https://www.twitter.com/oscarcito1986" target="_blank" title="Twitter"><i id="twitter" class="fa fa-fw fa-twitter fa-4x" aria-hidden="true"></i></a></li>
-	        <li class="footerSocialMediaList"><a href="https://www.freecodecamp.com/oscarcito100" target="_blank" title="FreeCodeCamp"><i id="freeCodeCamp" class="fa fa-fw fa-free-code-camp fa-4x" aria-hidden="true"></i></a></li>		  
-		  </ul>	  
+	      <div class="col-sm-6 footerBody">
+          <p>Written and coded by <a href="https://www.freecodecamp.com/oscarcito100" target="_blank">Oscar Germade. <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+		      <p>All rights reserved. 2017</p>
+	      </div>
+
+        <!-- 2nd colunm -->
+	      <div class="col-sm-6 footerBody">
+	        <!-- social media links -->
+          <ul id="footerUl">
+            <li class="footerSocialMediaList"><a href="https://www.linkedin.com/in/oscar-ruben-germade-gonzalez-r�os-6ba5aa51" target="_blank" title="Linkedin"><i id="linkedin" class="fa fa-fw fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+            <li class="footerSocialMediaList"><a href="https://www.github.com/oscarcito100" target="_blank" title="Github"><i id="github" class="fa fa-fw fa-github fa-3x" aria-hidden="true"></i></a></li>
+            <li class="footerSocialMediaList"><a href="https://www.facebook.com/oscarruben.germadegonzalezrios" target="_blank" title="Facebook"><i id="facebook" class="fa fa-fw fa-facebook-official fa-3x" aria-hidden="true"></i></a></li>
+            <li class="footerSocialMediaList"><a href="https://www.twitter.com/oscarcito1986" target="_blank" title="Twitter"><i id="twitter" class="fa fa-fw fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+		      </ul>
+	      </div>
 	    </div>
 	  </div>
-	</div>
   </footer>
 </body>
 </html>

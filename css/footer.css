@@ -2,14 +2,18 @@
 
 /* container */
 footer {
-	height: 200px;
+	height: auto;
+	background-color: #c0c0c0;
 }
 /* each column of the footer */
 .footerBody {
-	margin: 60px;	
+	margin: 60px 0;
 }
 /* every <li> of the social media list */
+#footerUl {
+	padding-left: 0;
+}
 .footerSocialMediaList {
-	display: inline;	
+	display: inline;
 	list-style-type: none;
 }

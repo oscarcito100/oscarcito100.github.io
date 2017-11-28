@@ -2,7 +2,7 @@
 
 /* container of the whole section */
 #contact {
-    background-image: url("../pictures/computer.jpg");
+  background-image: url("../pictures/computer.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -12,16 +12,15 @@
 	opacity: 0.9;
 }
 /* container for writing the contact area */
-#contactContainer {
+#containerContact {
 	width: 70%;
-	padding: 15px;
+	padding: 55px 0 40px 0;
 }
 /* Headers of the content */
 .contactHeader {
 	color: #ffffff;
 	font-weight: bold;
-    text-shadow: 5px 5px 5px #000000;
-	margin-top: 60px;
+  text-shadow: 5px 5px 5px #000000;
 }
 /* horizonal line of the header */
 #contactHrLine {
@@ -34,14 +33,14 @@
 .contactSubheaders {
 	color: white;
 	font-weight: bold;
-    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;	/* making a border */
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;	/* making a border */
 }
 /* the 3 inputs and the textarea of the contact's form*/
-.form-control {	  
+.form-control {
 	border-radius: 20px/5px;
-    box-sizing: border-box; /* padding and borders are included in the total width and height of the elements */
-    border-bottom: 2px solid #4d0028;
-    box-shadow: none;	  
+  box-sizing: border-box; /* padding and borders are included in the total width and height of the elements */
+  border-bottom: 2px solid #4d0028;
+  box-shadow: none;
 }
 .form-control:focus {
 	border-top: 2px solid #4d0028;
@@ -85,11 +84,11 @@
 #facebook {
 	background-color: #ffffff;
 	color: #3B5998;
-	border-radius: 25%;	  
+	border-radius: 25%;
 }
 #facebook:hover {
 	background-color: #3B5998;
-	color: #ffffff;	  
+	color: #ffffff;
 }
 /* Twitter logo */
 #twitter {
@@ -99,7 +98,7 @@
 }
 #twitter:hover {
 	background-color: #33CCFF;
-	color: #ffffff;	  	  
+	color: #ffffff;
 }
 /* Github logo */
 #github {
@@ -109,17 +108,17 @@
 }
 #github:hover {
 	background-color: #000000;
-	color: white;	  
+	color: white;
 }
 /* FreeCodeCamp logo */
 #freeCodeCamp {
 	background-color: #ffffff;
 	color: #006400;
-	border-radius: 25%;	  
+	border-radius: 25%;
 }
 #freeCodeCamp:hover {
 	background-color: #006400;
-	color: #ffffff;	  
+	color: #ffffff;
 }
 .flex-container {
 	display: flex;
@@ -129,12 +128,14 @@
 }
 /* styling for tablets ans phones */
 @media screen and (max-width: 768px) {
-	#contactContainer {
+	#containerContact {
 		width: 90%;
-		padding: 0;
 	}
+  .contactHeader {
+    font-size: 30px;
+  }
 	.fa-ul {
-	    margin-top: 15px;		
+	    margin-top: 15px;
 	}
 	#contactHrLine {
 		width: 90%;
