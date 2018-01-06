@@ -12,6 +12,7 @@
 /* logo of the page */
 #mainNavbar a.navbar-brand {
 	padding: 10px 15px;
+	font-family: 'Spectral SC', serif;
 }
 /* text under the logo */
 #mainNavbar a.navbar-brand h6 {
@@ -25,7 +26,7 @@
 }
 #mainNavbar .navbar-nav a.navLinks:hover {
 	background: #ffffff;
-    color: #000000;	/* black */
+  color: #000000;	/* black */
 	border-bottom: 4px solid #000000;
 	border-radius: 20px/5px;
 	transition: all 0.1s ease-in-out;
@@ -71,6 +72,6 @@
 	#navbarLinks {
 		background-color: #4d0028;
 		border-radius: 20px/5px;
-        width: 60%;
+    width: 60%;
 	}
 }

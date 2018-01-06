@@ -90,6 +90,7 @@
 /* style the name of the project */
 .projectName {
 	font-weight: bold;
+	font-family: 'Spectral SC', serif;
 }
 /* style the images of the techlogy used */
 .technologyLogos {
