@@ -9,10 +9,18 @@
 #mainNavbar .navbar-header {
 	height: 60px;
 }
-/* logo of the page */
-#mainNavbar a.navbar-brand {
+/* navbar-brand name: logo of the page */
+#mainNavbar .navbar-brand {
+  color: #ffffff;
+  font-size: 20px;
 	padding: 10px 15px;
 	font-family: 'Spectral SC', serif;
+	/*transition: border-bottom 5s ease-in-out;
+	-webkit-transition: border-bottom 5s ease-in-out;
+	-moz-transition: border-bottom 5s ease-in-out;*/
+}/*
+#mainNavbar .navbar-brand:hover {
+	border-bottom: 1px solid #ffffff;
 }
 /* text under the logo */
 #mainNavbar a.navbar-brand h6 {
@@ -29,7 +37,7 @@
   color: #000000;	/* black */
 	border-bottom: 4px solid #000000;
 	border-radius: 20px/5px;
-	transition: all 0.1s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 /* link that is active */
 #mainNavbar .navbar-nav .active a.navLinks {
@@ -38,40 +46,106 @@
 	border-bottom: 4px solid #000000;
 	border-radius: 20px/5px;
 }
+/* don't make hoverable the active link
 #mainNavbar .navbar-nav .active a.navLinks:hover {
 	background: #ffffff;
-    color: #000000;
-}
+  color: #000000;
+}*/
 /* container for the links, except the navbar-brand*/
 #navbarLinks {
     margin-top: 10px;
 }
-/* navbar-brand name */
-#mainNavbar .navbar-brand {
-    color: #ffffff;
-    font-size: 20px;
-}
+
 /* style the button-toggle when is collpased */
 #mainNavbar .navbar-toggle:hover {
-	background-color: #ffffff;
+	background-color: #ffffff; /*white*/
 }
 #mainNavbar .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
 #mainNavbar .navbar-toggle:hover .icon-bar {
-	background-color: #4d0028;
+	background-color: #4d0028; /*navbar color: brown */
 }
 #mainNavbar .navbar-toggle:active {
-	background-color: #666699;
+	background-color: #666699; /*lila*/
 }
 #mainNavbar .navbar-toggle:active .icon-bar {
 	background-color: #000000;
 }
+#mainNavbar .navbar-toggle:visited {
+	background-color: #666699; /*lila*/
+}
+#mainNavbar .navbar-toggle:visited .icon-bar {
+	background-color: #000000;
+}
+/* <ul> of the social media belonging to the navbar*/
+#navbarSocialMediaUlTag {
+	padding-left: 0;
+	margin-right: 15px;
+}
+/* <li> */
+.socialMediaListNavbar {
+	display: inline;
+	list-style-type: none;
+}
+/* <a> of the social media links */
+.socialMediaListNavbar .socialMediaAnchor {
+	padding: 0 0 10px 0;
+}
+
+
+/* Linkedin logo*/
+#linkedinNavbar {
+	color: #ffffff;
+}
+#linkedinNavbar:hover {
+	color: #007bb6;
+}
+/* Facebook logo */
+#facebookNavbar {
+	color: #ffffff;
+}
+#facebookNavbar:hover {
+	color: #3B5998;
+}
+/* Twitter logo */
+#twitterNavbar {
+	color: #ffffff;
+}
+#twitterNavbar:hover {
+	color: #33CCFF;
+}
+/* Github logo */
+#githubNavbar {
+	color: #ffffff;
+}
+#githubNavbar:hover {
+	color: #000000;
+}
+/* FreeCodeCamp logo */
+#freeCodeCampNavbar {
+	color: #ffffff;
+}
+#freeCodeCampNavbar:hover {
+	color: #006400;
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
 	#navbarLinks {
 		background-color: #4d0028;
 		border-radius: 20px/5px;
     width: 60%;
+		border: 1px solid #ffffff;
+		margin: 10px auto;
+	}
+	.navLinks {
+		text-align: center;
+	}
+	.liNavbarLinks {
+		margin: 10px;
+	}
+	#navbarSocialMediaUlTag {
+		display: none;
 	}
 }

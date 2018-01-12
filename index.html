@@ -24,6 +24,9 @@
   <!-- Google Font Spectral+sc -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Spectral+SC" rel="stylesheet">
 
+  <!-- Jquery cycle plugin to be able to do the transition effects in the image slider in about section -->
+  <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
+
   <!-- Style -->
   <link rel="stylesheet" href="css/portfolio.css"/>
   <link rel="stylesheet" href="css/navbar.css"/>
@@ -37,8 +40,8 @@
 /* GLOBAL STYLING */
     body {
     position: relative; /* the element with data-spy="scroll" requires position=relative */
-	  margin: 0; /* defined becasue we are using position */
-	  padding: 0; /* defined becasue we are using position */
+	  margin: 0; /* defined because we are using position */
+	  padding: 0; /* defined because we are using position */
 	}
 	/* All elements include padding and border in their total width and hiegth */
 	* {
@@ -54,7 +57,7 @@
 	   data-spy=scroll: selecting the scrollable area
 		 data-target: is the content related
 		 data-offset: pixels from top -->
-<body data-spy="scroll" data-target="#mainNavbar" data-offset="200">
+<body data-spy="scroll" data-target="#mainNavbar" data-offset="200" id="body">
 
 <!-- NAVBAR -->
   <nav id="mainNavbar" class="navbar navbar-default navbar-fixed-top">
@@ -71,16 +74,27 @@
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
         </button>
+        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSocialMedia">
+          <span><i class="fa fa-share-square-o fa-lg" aria-hidden="true"></i></span>
+        </button>-->
       </div>
 
       <!-- navbar-collapse area: links to the content of each section of the <nav> in the scrollspy -->
 	    <div class="collapse navbar-collapse" id="navbarLinks">
-	      <ul class="nav navbar-nav">
-		      <li><a href="#home" class="navLinks">HOME</a></li>
-		      <li><a href="#portfolio" class="navLinks">PORTFOLIO</a></li>
-		      <li><a href="#skills" class="navLinks">SKILLS</a></li>
-		      <li><a href="#about" class="navLinks">ABOUT</a></li>
-		      <li><a href="#contact" class="navLinks">CONTACT</a></li>
+	      <ul class="nav navbar-nav" id="ulNavbarLinks">
+		      <li class="liNavbarLinks"><a href="#home" class="navLinks">HOME</a></li>
+		      <li class="liNavbarLinks"><a href="#portfolio" class="navLinks">PORTFOLIO</a></li>
+		      <li class="liNavbarLinks"><a href="#skills" class="navLinks">SKILLS</a></li>
+		      <li class="liNavbarLinks"><a href="#about" class="navLinks">ABOUT</a></li>
+		      <li class="liNavbarLinks"><a href="#contact" class="navLinks">CONTACT</a></li>
+        </ul>
+        <!-- navbar-collapse area: Social Media links at the right -->
+        <ul class="nav navbar-nav navbar-right" id="navbarSocialMediaUlTag">
+          <li class="socialMediaListNavbar"><a class="socialMediaAnchor" href="https://www.linkedin.com/in/oscar-ruben-germade-gonzalez-r�os-6ba5aa51" target="_blank" title="Add me on Linkedin"><i id="linkedinNavbar" class="fa fa-fw fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+          <li class="socialMediaListNavbar"><a class="socialMediaAnchor" href="https://www.github.com/oscarcito100" target="_blank" title="See my projects' code on Github"><i id="githubNavbar" class="fa fa-fw fa-github-square fa-3x" aria-hidden="true"></i></a></li>
+          <li class="socialMediaListNavbar"><a class="socialMediaAnchor" href="https://www.facebook.com/oscarruben.germadegonzalezrios" target="_blank" title="Like me on Facebook"><i id="facebookNavbar" class="fa fa-fw fa-facebook-official fa-3x" aria-hidden="true"></i></a></li>
+          <li class="socialMediaListNavbar"><a class="socialMediaAnchor" href="https://www.twitter.com/oscarcito1986" target="_blank" title="Follow me on Twitter"><i id="twitterNavbar" class="fa fa-fw fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
+          <li class="socialMediaListNavbar"><a class="socialMediaAnchor" href="https://www.freecodecamp.com/oscarcito100" target="_blank" title="See my evolution on FCC"><i id="freeCodeCampNavbar" class="fa fa-fw fa-free-code-camp fa-3x" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
@@ -279,40 +293,39 @@
 
 <!-- ABOUT -->
   <section id="about">
-    <div id="containerAbout" class="container-fluid text-center">
-      <h1 id="aboutHeader">< ABOUT ME /></h1>
+    <div class="container-fluid">
+      <h1 id="aboutHeader" class="text-center">< ABOUT ME /></h1>
 	    <hr id="aboutHrLine">
 
+      <!--Create a row and 1st column -->
       <div class="row">
-	      <div class="col-sm-offset-3 col-sm-6">
-          <p class="aboutText"> I had never imagined that I would become a Full Stack Web Developer if you would have asked me where
-             I see myself working in the future. My love with this world came when I did a beginner HTML and CSS course in an Adult School in
-             London. I enjoyed some much that I decided to make a Master in Computing for Financial Markets at University of Stirling
-             to learn about programming, databases and softwate design related with the finance world. HOW CRAZY I WAS!!</p>
-          <p class="aboutText">To be honest, I think it was the right choice because with the time passing I started loving more programming
-             than financial markets. So that, on my way back to Spain y decided to focus and improve my programming skills to become an
-             Full Stack Web Developer. </p>
-          <p class="aboutText">In order to get this goal, I am working hard, doing some online courses in <a href="https://www.udemy.com" target="_blank"
-             title="Go to website"><b>'Udemy'</b></a>, tutorials in <a href="https://thenewboston.com/" target="_blank" title="Go to website">
-             <b>'The New Boston'</b></a> and projects in <a href="https://www.freecodecamp.org" target="_blank" title="Go to website">
-             <b>'FreeCodeCamp'</b></a> to post them into my portfolio web page.</p>
-          <p class="aboutText">My dissertation project was based on the development of a financial website where the users can watch stock data retrieve
-             from <a href="https://developer.yahoo.com/yql/console/" target="_blank" title="Go to website"><b>‘Yahoo’s API’</b></a>, perform technical analysis in charts provided by <a href="https://www.tradingview.com/" target="_blank" title="Go to website">
-             <b>‘Tradingview’</b></a>, and build and monitor his own portfolio. This project has
-             given me strong knowledge in website development, gaining experience in both front end and back end.</p>
-          <p class="aboutText">Once I ended up the Master, I did a internship at <a href="www.shimmylingerie.co.uk" target="_blank" title="Go to website"><b>
-             'Shimmy Lingerie'</b></a> in London for 3 months as a Junior Back End Developer. My functions were to create the <b>Rest Api</b>
-             with <b>Express.js</b> and <b>Node.js</b>, apart from creating the Database with <b>MongoDB</b> using Mongoose to model the data.</p>
-	        <p class="aboutText">After returning to Spain I worked as Junior Web Developer at <a href="https://lavidaenled.com" target="_blank" title="Go to website">
-            'La vida en Led'</a> for 3 months. This website was developed with Prestashop and my functions were to use the 'Administrator Interface'
-             in order to maintain the website, update all the existing products and upload new goods.</p>
-          <p class="aboutText">Forementioned my objective is to become a Full Stack Web Developer and for that to happend I am constantly learning new
-             languages, framworks and tools, from building and maintaining websites to playing with APIs and databases in order to build modern web applications.</p>
-		      <p class="aboutText">My strength is with <b>Html 5</b> and <b>Css 3</b> and <b>Bootstrap</b>, along with <b>Javascript</b>, but I also enjoy
-             working on the back end and try to expand my skills learning new frameworks like <b>Angular</b>, languages like <b>Php</b> and databases
-             like <b>MySql</b> o <b>MongoDB</b>.</p>
+	      <div class="col-sm-6" id="aboutLeftColumn">
+          <img id="aboutMe" class="img-responsive" src="pictures/aboutPergamino.jpg" title="Infomation about me" width="624px" height="795px"/>
   	    </div>
-	</div>
+
+        <!-- 2nd column: 1: container for the Slider cycle plugin -->
+	      <div class="col-sm-6" id="aboutRightCol">
+          <!-- My hobbies -->
+          <p id="hobbiesHeader">My hobbies:</p>
+          <p id="hobbyOutput" class="text-center"></p> <!-- display the alt attribute of the slider -->
+
+          <!-- 2: Image slider container -->
+          <div class="slider">
+            <img class="img-responsive" src="pictures/handball.jpg" width="600px" height="400px" alt="Handball" title="A handball game"/>
+            <img class="img-responsive" src="pictures/financial.png" width="600px" height="400px" alt="Financial Markets" title="A graph made by myself"/>
+            <img class="img-responsive" src="pictures/music.jpg" width="600px" height="400px" alt="Listen to Music" title="My favourite Dj is David guetta"/>
+            <img class="img-responsive" src="pictures/futbal.jpg" width="600px" height="400px" alt="Football" title="Spain celebrates the World Cup Cahmpionship"/>
+            <img class="img-responsive" src="pictures/series.jpg" width="600px" height="400px" alt="Watch Series" title="My favourite serie is Game of Thrones"/>
+            <img class="img-responsive" src="pictures/english.jpg" width="600px" height="400px" alt="Speaking English" title="I try to do everything in English"/>
+          </div>
+          <!-- 3: Previus and Next Buttons -->
+          <ul id="PrevAndNextcontrols">
+            <li id="previous"><a href="#"><i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i></a></li>
+            <li id="next"><a href="#"><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+	  </div>
   </section>
 
 <!-- CONTACT -->
@@ -323,7 +336,7 @@
 
       <!-- Create a row and 1st column -->
 	    <div class="row">
-	      <div class="col-sm-6">
+	      <div class=" col-sm-offset-3 col-sm-6">
           <h3 class="contactSubheaders">Send me an email</h3>
 	        <form action="mailto:oscar.germadegonzalez@gmail.com" method="post" enctype="text/plain">
             <div class="form-group">
@@ -342,7 +355,7 @@
 	        </form>
 		    </div>
 
-        <!--2nd column -->
+        <!--2nd column
 		    <div class="col-sm-6">
           <h3 class="contactSubheaders">Text me on media</h3>
 		      <div class="flex-container">
@@ -354,7 +367,7 @@
             <li class="socialMediaList"><a href="https://www.twitter.com/oscarcito1986" target="_blank" title="Twitter"><i id="twitter" class="fa fa-fw fa-twitter-square fa-4x" aria-hidden="true"></i></a></li>
 			      <li class="socialMediaList"><a href="https://www.freecodecamp.com/oscarcito100" target="_blank" title="FreeCodeCamp"><i id="freeCodeCamp" class="fa fa-fw fa-free-code-camp fa-4x" aria-hidden="true"></i></a></li>
 		      </ul>
-		    </div>
+		    </div> -->
       </div>
 	  </div>
   </section>
@@ -383,5 +396,37 @@
 	    </div>
 	  </div>
   </footer>
+
+  <!-- 5- jquery code to use the jquery cycle plugin -->
+	<script>
+	$(document).ready(function(){
+    /* Managing the cycle slider plugin*/
+		$(".slider")
+    .after("<div class='dotControls'>") // display the indicators
+    .cycle({
+			fx: "shuffle", // type of transition. look in the website for more like turnDown, curtainX...
+		  pause: 1,
+		  prev: "#previous",
+			next: "#next",
+      pager: ".dotControls",
+      after: onAfter
+		});
+    function onAfter() { // display the alt="" attribute of every picture
+      $('#hobbyOutput').html('<i class="fa fa-quote-left" aria-hidden="true"></i>' + " " + this.alt + " " + '<i class="fa fa-quote-right" aria-hidden="true"></i>');
+    }
+
+    /*
+    $(".liNavbarLinks").click(function(){
+      var width = $("#body").width();
+      console.log(width);
+      if (width < "768") {
+        $("#ulNavbarLinks").toggle(1000);
+      }
+    })
+    $(".navbar-toggle").click(function(){
+      $("#ulNavbarLinks").show(1000);
+    })*/
+	});
+	</script>
 </body>
 </html>
