@@ -154,7 +154,7 @@
         <!-- 2nd project: Random quote machine -->
 	      <div class="col-sm-4">
 	        <div class="card">
-            <img class="img-responsive portfolioImages" src="pictures/randomQuote.png" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
+            <img class="img-responsive portfolioImages" src="pictures/randomQuote.PNG" alt="Random quote machine" width="500px" height="500px"/>
 		        <div class="overlay">
 		          <p class="overlayText">A random quote genetator which get a quote and their author from 'andruxnet API' and display it within an html element.</p>
               <p class="overlayText">When the page is load or when the user clicks the 'new quote' button, it calls the 'ajax function' to extract a new quote and their author for the API.</p>
@@ -180,11 +180,9 @@
         <!-- 3th project: -->
 	      <div class="col-sm-4">
 	        <div class="card">
-            <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
+            <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Weather app" width="500px" height="500px"/>
 		        <div class="overlay">
-		          <p class="overlayText">A random quote genetator which get a quote and their author from 'andruxnet API' and display it within an html element.
-                Each time the user clicks the 'new quote' button, it calls for a function to extract a new quote and their author for the API. Also the user
-                 is able to share the quote in Twitter after clicking the 'Tweet it' button.</p>
+		          <p class="overlayText">.</p>
 		          <a href="https://oscarcito100.github.io/weather-app/" target="_blank" class="btn btn-primary overlayButtons">See project</a>
 		          <a href="https://github.com/oscarcito100/weather-app"target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
 		        </div>
@@ -338,19 +336,19 @@
 	    <div class="row">
 	      <div class=" col-sm-offset-3 col-sm-6">
           <h3 class="contactSubheaders">Send me an email</h3>
-	        <form action="mailto:oscar.germadegonzalez@gmail.com" method="post" enctype="text/plain">
+	        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="contactForm" enctype="text/plain">
             <div class="form-group">
-	            <label for="name"></label>
-              <input type="text" class="form-control" name="name" placeholder="Your Name" required/>
+	            <label for="name"></label> <!-- for att must be equal to the input id att -->
+              <input type="text" class="form-control" id="name" name="name" value="<?php echo $name;?>" placeholder="Your Name *" required/>
 	            <label for="subject"></label>
-              <input type="text" class="form-control" name="subject" placeholder="Your Subject"/>
+              <input type="text" class="form-control" id="subject" name="subject" value="<?php echo $subject;?>" placeholder="Your Subject *" required/>
 	            <label for="email"></label>
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required/>
+              <input type="email" class="form-control" id="email" name="email" value="<?php echo $email;?>" placeholder="Your Email *" required/>
 	            <label for="message"></label>
-              <textarea class="form-control" name="message" rows="6" cols="50" placeholder="Your Message"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="10" cols="50" placeholder="Your Message *"></textarea>
 			        <br>
-		          <input type="submit" value="Submit" class="btn btn-primary btnInputs"/>
-		          <input type="reset" value="Reset" class="btn btn-primary btnInputs"/>
+		          <input type="submit" value="submit" name="submit" class="btn btn-primary btnInputs"/>
+		          <input type="reset" value="reset" class="btn btn-primary btnInputs"/>
 	          </div>
 	        </form>
 		    </div>

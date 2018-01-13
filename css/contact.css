@@ -29,10 +29,14 @@
 	  height: 5px;
 	  color: #ffffff;
 	  margin-top: 0;
+    border-bottom: 4px solid #000000;
+    border-radius: 20px/5px;
 }
+
 /* subheaders */
 .contactSubheaders {
 	color: white;
+  margin-top: 10px;
 	font-weight: bold;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;	/* making a border */
 }
@@ -41,15 +45,17 @@
 	border-radius: 20px/5px;
   box-sizing: border-box; /* padding and borders are included in the total width and height of the elements */
   border-bottom: 2px solid #4d0028;
-  box-shadow: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  height: 1%;
+  color: #000000;
 }
 .form-control:focus {
-	border-top: 2px solid #4d0028;
-	border-right: 2px solid #4d0028;
-	border-left: 2px solid #4d0028;
+	border: 2px solid #4d0028;
 }
 /* the 2 buttons of the contact's form */
 .btnInputs {
+  font-size: 18px;
 	border: 2px solid #4d0028;
 	border-radius: 20px/5px;
 	width: 30%;
@@ -62,6 +68,7 @@
 	color: #ffffff;
 	border: 2px solid #ffffff;
 }
+
 /* list of social media logos */
 .fa-ul {
 	margin-top: 40px;
@@ -133,7 +140,10 @@
 		width: 90%;
 	}
   .contactHeader {
-    font-size: 30px;
+    font-size: 28px;
+  }
+  .btnInputs {
+    font-size: 16px;
   }
 	.fa-ul {
 	    margin-top: 15px;
