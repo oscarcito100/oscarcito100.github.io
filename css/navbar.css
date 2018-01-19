@@ -96,38 +96,38 @@
 
 /* Linkedin logo*/
 #linkedinNavbar {
-	color: #ffffff;
+	color: #007bb6;
 }
 #linkedinNavbar:hover {
-	color: #007bb6;
+	color: #ffffff;
 }
 /* Facebook logo */
 #facebookNavbar {
-	color: #ffffff;
+	color: #3B5998;
 }
 #facebookNavbar:hover {
-	color: #3B5998;
+	color: #ffffff;
 }
 /* Twitter logo */
 #twitterNavbar {
-	color: #ffffff;
+	color: #33CCFF;
 }
 #twitterNavbar:hover {
-	color: #33CCFF;
+	color: #ffffff;
 }
 /* Github logo */
 #githubNavbar {
-	color: #ffffff;
+	color: #000000;
 }
 #githubNavbar:hover {
-	color: #000000;
+	color: #ffffff;
 }
 /* FreeCodeCamp logo */
 #freeCodeCampNavbar {
-	color: #ffffff;
+	color: #006400;
 }
 #freeCodeCampNavbar:hover {
-	color: #006400;
+	color: #ffffff;
 }
 
 /* media queries */

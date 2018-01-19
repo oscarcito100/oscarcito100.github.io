@@ -1,0 +1,37 @@
+body {
+  position: relative; /* the element with data-spy="scroll" requires position=relative */
+  margin: 0; /* defined because we are using position */
+  padding: 0; /* defined because we are using position */
+}
+
+/* All elements include padding and border in their total width and hiegth */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* fixed button to go to the top */
+#buttonToTop {
+  background-color: #ffffff;
+  color: #4d0028;
+  border: 2px solid #4d0028;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px;
+}
+#buttonToTop:hover {
+  background-color: #4d0028;
+  color: #ffffff;
+  border: 2px solid #4d0028;
+  box-shadow: 0 0 5px 5px #ffffff;
+}
+@media screen and (max-width: 768px) {
+  #buttonToTop {
+    bottom: 15px;
+    right: 15px;
+    padding: 5px;
+  }
+}

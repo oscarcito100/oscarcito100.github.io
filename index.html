@@ -35,20 +35,11 @@
   <link rel="stylesheet" href="css/contact.css"/>
   <link rel="stylesheet" href="css/skills.css"/>
   <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/general.css"/>
 
   <style>
 /* GLOBAL STYLING */
-    body {
-    position: relative; /* the element with data-spy="scroll" requires position=relative */
-	  margin: 0; /* defined because we are using position */
-	  padding: 0; /* defined because we are using position */
-	}
-	/* All elements include padding and border in their total width and hiegth */
-	* {
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
+
   </style>
 </head>
 
@@ -108,9 +99,9 @@
 	    <div class="row">
 	      <div id="homeRightContainer" class="col-sm-6 text-right">
           <h1 id="homeTitle">Hi world!</h1>
-	        <h4 id="homeSubTitle1">I'm Oscar Germade</h4>
-	        <h6 id="homeSubTitle2">Front End Web Developer<h6>
-	        <h6 id="homeSubTitle3">Trader and Technical Analyst<h6>
+	        <h4 id="homeTitleMyName">I'm Oscar Germade</h4>
+	        <h6 class="homeTitleProfesion">Front End Web Developer<h6>
+	        <h6 class="homeTitleProfesion">Trader and Technical Analyst<h6>
 		    </div>
 
         <!-- 2nd column -->
@@ -130,59 +121,44 @@
       <!-- creating a row to hold 3 projects -->
 	    <div class="row">
 
-        <!-- 1st project: Lionel messi tribute page -->
+        <!-- 1nd project: Random quote machine -->
 	      <div class="col-sm-4">
 	        <div class="card"> <!-- card to hold the image, hidden and shown container and the caption-->
-            <img class="img-responsive portfolioImages" src="pictures/messiProject1.jpg" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
+            <img class="img-responsive portfolioImages" src="pictures/portfolio/randomQuote.PNG" alt="Random quote machine" width="391px" height="293px"/>
 		        <div class="overlay"> <!-- Area that is hidden by default but is displayed when the card is hovered -->
-		          <p class="overlayText">A tribute Web page to Lionel Messi to check out his personal data, biography, stats and awards during his professional career.</p>
-		          <a href="https://oscarcito100.github.io/lionel-messi-tribute-page/" target="_blank" class="btn btn-primary overlayButtons">See project</a>
-		          <a href="https://github.com/oscarcito100/lionel-messi-tribute-page" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
-		        </div>
-		        <div class="caption"> <!-- show info about the project like title, website project and technologies used -->
-		          <h4 class="projectName" title="project name">TRIBUTE PAGE</h4>
-		          <p title="Kind of project">FreeCodeCamp Project</p>
-		          <div class="logos" title="Technologies used"><!-- pictures of the technologies uded -->
-			          <img class="img-responsive technologyLogos" src="pictures/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
-			        </div>
-	          </div>
-		      </div>
-	      </div>
-
-        <!-- 2nd project: Random quote machine -->
-	      <div class="col-sm-4">
-	        <div class="card">
-            <img class="img-responsive portfolioImages" src="pictures/randomQuote.PNG" alt="Random quote machine" width="500px" height="500px"/>
-		        <div class="overlay">
-		          <p class="overlayText">A random quote genetator which get a quote and their author from 'andruxnet API' and display it within an html element.</p>
-              <p class="overlayText">When the page is load or when the user clicks the 'new quote' button, it calls the 'ajax function' to extract a new quote and their author for the API.</p>
-              <p class="overlayText">Also the user is able to share the quote in Twitter after clicking the 'Tweet it' button.</p>
+		          <p class="overlayText">A random quote genetator which get a quote and their author from <i>'Andruxnet API'</i> and display them within html elements.</p>
+              <p class="overlayText">When the page is load or when the user clicks the <i>'new quote'</i> button, it calls the an Ajax Function to extract a new quote and their author from the API.</p>
+              <p class="overlayText">Futhermore, the user is able to share the quote in Twitter after clicking the <i>'Tweet it'</i> button.</p>
 		          <a href="https://oscarcito100.github.io/random-quote-machine/" target="_blank" class="btn btn-primary overlayButtons">See project</a>
 		          <a href="https://github.com/oscarcito100/random-quote-machine" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
 		        </div>
-		        <div class="caption">
+		        <div class="caption"> <!-- show info about the project like title, website project and technologies used -->
 		          <h4 class="projectName" title="project name">RANDOM QUOTE MACHINE</h4>
-		          <p title="Kind of project">FreeCodeCamp Project</p>
-		          <div class="logos" title="Technologies used">
-			          <img class="img-responsive technologyLogos" src="pictures/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="BOOTSTRAP 4" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/javascript.png" alt="JAVASCRIPT" width="40px" height="40px"/>
-                <img class="img-responsive technologyLogos" src="pictures/jqueryLogo.png" alt="JQUERY" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/api.png" alt="API" width="40px" height="40px"/>
+		          <p title="Kind of project">FreeCodeCamp API Project</p>
+		          <div class="logos" title="Technologies used"> <!-- pictures of the technologies uded -->
+			          <img class="img-responsive technologyLogos" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/bootstrap.png" alt="BOOTSTRAP 4" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/javascript.png" alt="JAVASCRIPT" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/jqueryLogo.png" alt="JQUERY" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/api.png" alt="API" width="40px" height="40px"/>
 			        </div>
 	          </div>
 		      </div>
 	      </div>
 
-        <!-- 3th project: -->
+        <!-- 2nd project: -->
 	      <div class="col-sm-4">
 	        <div class="card">
-            <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Weather app" width="500px" height="500px"/>
+            <img class="img-responsive portfolioImages" src="pictures/portfolio/weatherApp.JPG" alt="Weather app" width="500px" height="500px"/>
 		        <div class="overlay">
-		          <p class="overlayText">.</p>
+		          <p class="overlayText">In this app the user can choose between 2 options when they see the main window:</p>
+              <p class="overlayText">First is to click the left button to get the weather conditions exactly where he is right now.
+                 This is done by the HTML 5 Geolocation API. If any error happens the browser displays the correspondt error like the
+                  weather can't be fetch from the API. </p>
+              <p class="overlayText">However, if the user want to know the weather in a special place like London, they must click the
+                right button. A new window will appear ask them to type the name of the place where they want to know its weather.
+            </p>
 		          <a href="https://oscarcito100.github.io/weather-app/" target="_blank" class="btn btn-primary overlayButtons">See project</a>
 		          <a href="https://github.com/oscarcito100/weather-app"target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
 		        </div>
@@ -190,14 +166,108 @@
 		          <h4 class="projectName" title="project name">WEATHER APP</h4>
 		          <p title="Kind of project">FreeCodeCamp Project</p>
 		          <div class="logos" title="Technologies used">
-			          <img class="img-responsive technologyLogos" src="pictures/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
-			          <img class="img-responsive technologyLogos" src="pictures/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/javascript.png" alt="JAVASCRIPT" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/jqueryLogo.png" alt="JQUERY" width="40px" height="40px"/>
+			          <img class="img-responsive technologyLogos" src="pictures/logos/api.png" alt="API" width="40px" height="40px"/>
 			        </div>
 	          </div>
 		      </div>
 	      </div>
+
+        <!-- 3th project:  -->
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
+            <div class="overlay">
+              <p class="overlayText">A new project is coming soon.</p>
+              <p class="overlayText">Thank you for your patience.</p>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See project</a>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
+            </div>
+            <div class="caption">
+              <h4 class="projectName" title="project name">WiffiCoffee</h4>
+              <p title="Kind of project">Book Project</p>
+              <div class="logos" title="Technologies used">
+                <img class="img-responsive technologyLogos" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
+              </div>
+            </div>
+          </div>
+        </div>
 	    </div>
+      
+      <!-- 2nd row"-->
+      <div class="row portfolioRow">
+        <!-- 4th project:  -->
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
+            <div class="overlay">
+              <p class="overlayText">A new project is coming soon.</p>
+              <p class="overlayText">Thank you for your patience.</p>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See project</a>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
+            </div>
+            <div class="caption">
+              <h4 class="projectName" title="project name">Financial Website</h4>
+              <p title="Kind of project">Master's Dissertation</p>
+              <div class="logos" title="Technologies used">
+                <img class="img-responsive technologyLogos" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5th project:  -->
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
+            <div class="overlay">
+              <p class="overlayText">A new project is coming soon.</p>
+              <p class="overlayText">Thank you for your patience.</p>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See project</a>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
+            </div>
+            <div class="caption">
+              <h4 class="projectName" title="project name">WiffiCoffee</h4>
+              <p title="Kind of project">Book Project</p>
+              <div class="logos" title="Technologies used">
+                <img class="img-responsive technologyLogos" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6th project:  -->
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
+            <div class="overlay">
+              <p class="overlayText">A new project is coming soon.</p>
+              <p class="overlayText">Thank you for your patience.</p>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See project</a>
+              <a href="" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
+            </div>
+            <div class="caption">
+              <h4 class="projectName" title="project name">WiffiCoffee</h4>
+              <p title="Kind of project">Book Project</p>
+              <div class="logos" title="Technologies used">
+                <img class="img-responsive technologyLogos" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 	  </div>
   </section>
 
@@ -374,6 +444,8 @@
       </div>
 	  </div>
   </section>
+
+  <a href="#home" id="buttonToTop" title="Go to the top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
 
 <!-- FOOTER -->
   <footer>
