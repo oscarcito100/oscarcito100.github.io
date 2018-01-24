@@ -55,15 +55,15 @@
 /* container for the images of the slider */
 .slider {
 	margin: 15px auto 0 auto;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 .slider img {
-	padding: 15px;
+	padding: 10px;
 	border: 1px solid #000000;
-	background-color: #4d0028;
+	background-color: #000000;
 	/*max-width: 600px;
 	max-height: 440px;*/
-	border-radius: 20px;
+	border-radius: 5px;
 }
 
 /* <ul> for the next and prev controls */

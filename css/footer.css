@@ -6,8 +6,13 @@ footer {
 	background-color: #c0c0c0;
 }
 /* each column of the footer */
-.footerBody {
-	margin: 60px 0;
+.footerColumns {
+	margin: 50px 0;
+}
+#footerRightHeader {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 /* every <li> of the social media list */
 #footerUl {
@@ -16,4 +21,39 @@ footer {
 .footerSocialMediaList {
 	display: inline;
 	list-style-type: none;
+}
+/* Linkedin logo*/
+#linkedin {
+	color: #007bb6;
+}
+#linkedin:hover {
+	color: #ffffff;
+}
+/* Facebook logo */
+#facebook {
+	color: #3B5998;
+}
+#facebook:hover {
+	color: #ffffff;
+}
+/* Twitter logo */
+#twitter {
+	color: #33CCFF;
+}
+#twitter:hover {
+	color: #ffffff;
+}
+/* Github logo */
+#github {
+	color: #000000;
+}
+#github:hover {
+	color: white;
+}
+/* FreeCodeCamp logo */
+#freeCodeCamp {
+	color: #006400;
+}
+#freeCodeCamp:hover {
+	color: #ffffff;
 }

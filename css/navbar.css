@@ -15,12 +15,10 @@
   font-size: 20px;
 	padding: 10px 15px;
 	font-family: 'Spectral SC', serif;
-	/*transition: border-bottom 5s ease-in-out;
-	-webkit-transition: border-bottom 5s ease-in-out;
-	-moz-transition: border-bottom 5s ease-in-out;*/
 }/*
-#mainNavbar .navbar-brand:hover {
-	border-bottom: 1px solid #ffffff;
+/* segure logo company */
+#comodoSSL {
+	margin-top: 10px;
 }
 /* text under the logo */
 #mainNavbar a.navbar-brand h6 {

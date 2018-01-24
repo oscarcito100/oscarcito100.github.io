@@ -2,7 +2,7 @@
 
 /* container of the whole section */
 #contact {
-  background-image: url("../pictures/computer.jpg");
+  background-image: url("../pictures/contact/computer.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -69,71 +69,6 @@
 	border: 2px solid #ffffff;
 }
 
-/* list of social media logos */
-.fa-ul {
-	margin-top: 40px;
-}
-/* each social media icon displaying inline */
-.socialMediaList {
-	display: inline;
-	margin: 15px;
-}
-/* Linkedin logo*/
-#linkedin {
-	background-color: #ffffff;
-	color: #007bb6;
-	border-radius: 25%;
-}
-#linkedin:hover {
-	background-color: #007bb6;
-	color: #ffffff;
-}
-/* Facebook logo */
-#facebook {
-	background-color: #ffffff;
-	color: #3B5998;
-	border-radius: 25%;
-}
-#facebook:hover {
-	background-color: #3B5998;
-	color: #ffffff;
-}
-/* Twitter logo */
-#twitter {
-	background-color: #ffffff;
-	color: #33CCFF;
-	border-radius: 25%;
-}
-#twitter:hover {
-	background-color: #33CCFF;
-	color: #ffffff;
-}
-/* Github logo */
-#github {
-	background-color: #ffffff;
-	color: #000000;
-	border-radius: 25%;
-}
-#github:hover {
-	background-color: #000000;
-	color: white;
-}
-/* FreeCodeCamp logo */
-#freeCodeCamp {
-	background-color: #ffffff;
-	color: #006400;
-	border-radius: 25%;
-}
-#freeCodeCamp:hover {
-	background-color: #006400;
-	color: #ffffff;
-}
-.flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
 /* styling for tablets ans phones */
 @media screen and (max-width: 768px) {
 	#containerContact {
