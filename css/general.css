@@ -21,6 +21,7 @@ body {
   bottom: 50px;
   right: 50px;
   padding: 10px;
+  z-index: 1000;
 }
 #buttonToTop:hover {
   background-color: #4d0028;

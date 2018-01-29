@@ -27,6 +27,10 @@
   <!-- Jquery cycle plugin to be able to do the transition effects in the image slider in about section -->
   <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
 
+  <!-- Google Charts -->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+
   <!-- Style -->
   <link rel="stylesheet" href="css/portfolio.css"/>
   <link rel="stylesheet" href="css/navbar.css"/>
@@ -34,6 +38,8 @@
   <link rel="stylesheet" href="css/about.css"/>
   <link rel="stylesheet" href="css/contact.css"/>
   <link rel="stylesheet" href="css/skills.css"/>
+  <link rel="stylesheet" href="css/otherSkills.css"/>
+  <link rel="stylesheet" href="css/backSkills.css"/>
   <link rel="stylesheet" href="css/footer.css"/>
   <link rel="stylesheet" href="css/general.css"/>
 
@@ -66,9 +72,6 @@
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
         </button>
-        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSocialMedia">
-          <span><i class="fa fa-share-square-o fa-lg" aria-hidden="true"></i></span>
-        </button>-->
       </div>
 
       <!-- navbar-collapse area: links to the content of each section of the <nav> in the scrollspy -->
@@ -275,88 +278,151 @@
 <!-- SKILLS -->
   <section id="skills">
     <div id="containerSkills" class="container-fluid">
-	    <h1 class="skillsHeaders">< SKILLS /></h1>
+	    <h1 id="skillsHeader">< SKILLS /></h1>
       <hr id="skillsHrLine">
 
       <!--Create a row and 1st column -->
       <div class="row">
-        <div class="col-sm-3">
-          <div class="panel panelSkills">
+        <div class="col-sm-6">
+          <div class="panel">
             <div class="panel-heading">
-	            <h3 class="skillsHeaders">FRONT END</h3>
+	            <h3 class="skillsSubHeaders">FRONT END TECHNOLOGIES</h3>
             </div>
-            <div class="panel-body">
-		          <ul class="skillsList">
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> HTML 5</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> CSS 3</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> BOOTSTRAP 4</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JAVASCRIPT</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JQUERY</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> ANGULAR.JS</li>
-		          </ul>
+            <div class="panel-body panelBodyFront">
+              <!-- Vertical Axis: Tech Names-->
+              <div class="vAxisFront">
+                <img class="img-responsive" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/bootstrap.png" alt="Bootstrap 3" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/javascript.png" alt="JAVASCRIPT" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/jqueryLogo.png" alt="JQUERY" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/angular.png" alt="ANGULAR" width="40px" height="40px"/>
+              </div>
+              <!-- Horizaontal lines -->
+              <div>
+                <hr id="hr1Front">
+                <hr id="hr2Front">
+                <hr id="hr3Front">
+                <hr id="hr4Front">
+                <hr id="hr5Front">
+                <hr id="hr6Front">
+              </div>
+              <!---->
+              <div>
+                <span id="bar1Front"></span>
+                <span id="bar2Front"></span>
+                <span id="bar3Front"></span>
+                <span id="bar4Front"></span>
+                <span id="bar5Front"></span>
+                <span id="bar6Front"></span>
+              </div>
+              <!-- Horizontal Axis -->
+              <div class="xAxisFront">
+                <span class="xAxisFrontText">Beginner</span>
+                <span class="xAxisFrontText">Familiar</span>
+                <span class="xAxisFrontText">Proficient</span>
+                <span class="xAxisFrontText">Expert</span>
+                <span class="xAxisFrontText">Master</span>
+              </div>
 	          </div>
           </div>
         </div>
 
-        <!-- 2nd column -->
-        <div class="col-sm-3">
-          <div class="panel panelSkills">
+        <!-- 2nd Column -->
+        <div class="col-sm-6">
+          <div class="panel">
             <div class="panel-heading">
-	            <h3 class="skillsHeaders">BACK END and DB</h3>
+	            <h3 class="skillsSubHeaders">BACK END AND DATABASES</h3>
             </div>
-            <div class="panel-body">
-		          <ul class="skillsList">
-                <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> PHP</li>
-                <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> NODE.JS</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> EXPRESS.JS</li>
-  		          <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JAVA</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> MYSQL</li>
-                <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> MONGODB</li>
-		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> SQL</li>
-		          </ul>
+            <div class="panel-body panelBodyBack">
+              <!-- Vertical Axis: Tech Names-->
+              <div class="vAxisBack">
+                <img class="img-responsive" src="pictures/logos/php.png" alt="PHP" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/java.jpg" alt="JAVA" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/nodeAndExpress.png" alt="NODE.JS" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/sql.png" alt="SQL" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/mysql.png" alt="MYSQL" width="40px" height="40px"/>
+                <img class="img-responsive" src="pictures/logos/mongodb.png" alt="MONGODB" width="40px" height="40px"/>
+              </div>
+              <!-- Horizaontal lines -->
+              <div>
+                <hr id="hr1Back">
+                <hr id="hr2Back">
+                <hr id="hr3Back">
+                <hr id="hr4Back">
+                <hr id="hr5Back">
+                <hr id="hr6Back">
+              </div>
+              <!---->
+              <div>
+                <span id="bar1Back"></span>
+                <span id="bar2Back"></span>
+                <span id="bar3Back"></span>
+                <span id="bar4Back"></span>
+                <span id="bar5Back"></span>
+                <span id="bar6Back"></span>
+              </div>
+              <!-- Horizontal Axis -->
+              <div class="xAxisBack">
+                <span class="xAxisBackText">Beginner</span>
+                <span class="xAxisBackText">Familiar</span>
+                <span class="xAxisBackText">Proficient</span>
+                <span class="xAxisBackText">Expert</span>
+                <span class="xAxisBackText">Master</span>
+              </div>
 	          </div>
           </div>
         </div>
-
-         <!-- 3th column -->
-         <div class="col-sm-3">
-           <div class="panel panelSkills">
-             <div class="panel-heading">
- 	            <h3 class="skillsHeaders">OTHER TOOLS</h3>
-             </div>
-             <div class="panel-body">
- 		          <ul class="skillsList">
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> GIT</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> GITHUB</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> TERMINAL</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JQUERY</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> JSON</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> AJAX</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> API's</li>
- 		          </ul>
- 	          </div>
-           </div>
-         </div>
-
-         <!-- 4th column -->
-         <div class="col-sm-3">
-           <div class="panel panelSkills">
-             <div class="panel-heading">
- 	            <h3 class="skillsHeaders">FINANCE</h3>
-             </div>
-             <div class="panel-body">
- 		          <ul class="skillsList">
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> FINANCIAL MARKETS</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> INVESTMENT</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> PORTFOLIO MANAGEMENT</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> FINANCIAL MARKETS</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> QUANTITATIVE METHODS</li>
- 		            <li class="skill"><span class="glyphicon glyphicon-star glyphiconSkill"></span> ETC...</li>
- 		          </ul>
- 	          </div>
-           </div>
-         </div>
 	     </div>
+
+       <!-- 2nd row -->
+       <div class="row">
+         <!-- 2nd Column -->
+         <div class="col-sm-offset-3 col-sm-6">
+           <div class="panel">
+             <div class="panel-heading">
+              <h3 class="skillsSubHeaders">OTHER TOOLS</h3>
+             </div>
+             <div class="panel-body panelBodyTools">
+               <!-- Vertical Axis: Tech Names-->
+               <div class="vAxisTools">
+                 <img class="img-responsive" src="pictures/logos/git.png" alt="GIT" width="40px" height="40px"/>
+                 <img class="img-responsive" src="pictures/logos/github.png" alt="GITHUB" width="40px" height="40px"/>
+                 <img class="img-responsive" src="pictures/logos/cmd.png" alt="COMMAND LINE" width="40px" height="40px"/>
+                 <img class="img-responsive" src="pictures/logos/json.png" alt="JSON" width="40px" height="40px"/>
+                 <img class="img-responsive" src="pictures/logos/ajax.png" alt="AJAX" width="40px" height="40px"/>
+                 <img class="img-responsive" src="pictures/logos/api.png" alt="API" width="40px" height="40px"/>
+               </div>
+               <!-- Horizaontal lines -->
+               <div>
+                 <hr id="hr1Tools">
+                 <hr id="hr2Tools">
+                 <hr id="hr3Tools">
+                 <hr id="hr4Tools">
+                 <hr id="hr5Tools">
+                 <hr id="hr6Tools">
+               </div>
+               <!---->
+               <div>
+                 <span id="bar1Tools"></span>
+                 <span id="bar2Tools"></span>
+                 <span id="bar3Tools"></span>
+                 <span id="bar4Tools"></span>
+                 <span id="bar5Tools"></span>
+                 <span id="bar6Tools"></span>
+               </div>
+               <!-- Horizontal Axis -->
+               <div class="xAxisTools">
+                 <span class="xAxisToolsText">Beginner</span>
+                 <span class="xAxisToolsText">Familiar</span>
+                 <span class="xAxisToolsText">Proficient</span>
+                 <span class="xAxisToolsText">Expert</span>
+                 <span class="xAxisToolsText">Master</span>
+               </div>
+            </div>
+           </div>
+         </div>
+       </div>
 	   </div>
   </section>
 
@@ -432,8 +498,6 @@
 	  </div>
   </section>
 
-  <a href="#home" id="buttonToTop" title="Go to the top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
-
 <!-- FOOTER -->
   <footer>
     <div class="container-fluid text-center">
@@ -460,6 +524,9 @@
 	    </div>
 	  </div>
   </footer>
+
+  <!-- Right bottom button to go to the top -->
+  <a href="#home" id="buttonToTop" title="Go to the top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
 
   <!-- 5- jquery code to use the jquery cycle plugin -->
 	<script>
@@ -492,5 +559,33 @@
     })*/
 	});
 	</script>
+
+  <!-- Front End technologies Chart
+  <script>
+  google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawBasic);
+
+  function drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['City', 'Population',],
+          ['New York City, NY', 1],
+          ['Los Angeles, CA', 2],
+          ['Chicago, IL', 3],
+          ['Houston, TX', 4],
+          ['Philadelphia, PA', 5]
+        ]);
+
+        var options = {
+
+
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('frontEndTech'));
+
+        chart.draw(data, options);
+      }
+    </script>-->
+
 </body>
 </html>

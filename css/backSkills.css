@@ -1,0 +1,294 @@
+.panelBodyBack {
+  position: relative;
+}
+/* Horizontal lines */
+#hr1Back {
+  position: absolute;
+  top: -5px;
+  left: 65px;
+  width: 80%;
+}
+#hr2Back {
+  position: absolute;
+  left: 65px;
+  top: 45px;
+  width: 80%;
+}
+#hr3Back {
+  position: absolute;
+  left: 65px;
+  top: 95px;
+  width: 80%;
+}
+#hr4Back {
+  position: absolute;
+  left: 65px;
+  top: 145px;
+  width: 80%;
+}
+#hr5Back {
+  position: absolute;
+  left: 65px;
+  top: 195px;
+  width: 80%;
+}
+#hr6Back {
+  position: absolute;
+  left: 65px;
+  top: 245px;
+  width: 80%;
+}
+
+/*Vertical Axis: Tech Names */
+.vAxisBack {
+  position: absolute;
+  border-right: 1px solid #000000;
+}
+.vAxisBack img {
+  display: block;
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
+.vAxisBack img:first-child {
+  margin-top: 20px;
+}
+/* Horizontal axis: Level */
+.xAxisBack {
+  position: absolute;
+  left: 65px;
+  top: 320px;
+  border-top: 1px solid #000000;
+  padding-top: 10px;
+}
+.xAxisBackText {
+  margin: 10px 20px;
+  font-weight: bold;
+}
+/* bars */
+#bar1Back {
+  position: absolute;
+  left: 65px;
+  top: 270px;
+  width: 0;
+  height: 45px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+}
+.panel:hover .panel-body div #bar1Back{
+  width: 80px;
+  background-color: blue;
+}
+#bar2Back {
+  position: absolute;
+  left:  65px;
+  top: 220px;
+  width: 0;
+  height: 40px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+}
+.panel:hover .panel-body div #bar2Back {
+  width: 180px;
+  background-color: blue;
+}
+#bar3Back {
+  position: absolute;
+  left:  65px;
+  top: 170px;
+  width: 0;
+  height: 40px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+}
+.panel:hover .panel-body div #bar3Back{
+  width: 180px;
+  background-color: blue;
+}
+#bar4Back {
+  position: absolute;
+  left:  65px;
+  top: 120px;
+  width: 0;
+  height: 40px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+}
+.panel:hover .panel-body div #bar4Back {
+  width: 180px;
+  background-color: blue;
+}
+#bar5Back {
+  position: absolute;
+  left:  65px;
+  top: 70px;
+  width: 0;
+  height: 40px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+}
+.panel:hover .panel-body div #bar5Back {
+  width: 180px;
+  background-color: blue;
+}
+#bar6Back {
+  position: absolute;
+  left:  65px;
+  top: 20px;
+  width: 0;
+  height: 40px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+}
+.panel:hover .panel-body div #bar6Back {
+  width: 180px;
+  background-color: blue;
+}
+
+/* styling for tablets and phones */
+@media screen and (max-width: 590px) {
+  .xAxisBackText {
+    margin: 10px;
+  }
+  .panel:hover .panel-body div #bar6Back {
+    width: 150px;
+    background-color: blue;
+  }
+  .panel:hover .panel-body div #bar5Back {
+    width: 150px;
+    background-color: blue;
+  }
+  .panel:hover .panel-body div #bar4Back {
+    width: 150px;
+    background-color: blue;
+  }
+  .panel:hover .panel-body div #bar3Back {
+    width: 150px;
+    background-color: blue;
+  }
+  .panel:hover .panel-body div #bar2Back {
+    width: 150px;
+    background-color: blue;
+  }
+  .panel:hover .panel-body div #bar1Back {
+    width: 70px;
+    background-color: blue;
+  }
+}
+/* styling for tablets and phones */
+@media screen and (max-width: 420px) {
+  .vAxisBack {
+    width: 10%;
+    height: 210px;
+  }
+  .vAxisBack img {
+    margin-right: 2px;
+  }
+  .vAxisBack img:first-child {
+    margin-top: 10px;
+  }
+  .xAxisBack {
+    left: 41px;
+    top: 225px;
+    padding-top: 5px;
+  }
+  .xAxisBackText {
+    font-size: 10px;
+    margin: 0;
+  }
+  #hr1Back {
+    top: -5px;
+    left: 40px;
+    width: 80%;
+  }
+  #hr2Back {
+    left: 40px;
+    top: 30px;
+    width: 80%;
+  }
+  #hr3Back {
+    left: 40px;
+    top: 65px;
+    width: 80%;
+  }
+  #hr4Back {
+    left: 40px;
+    top: 100px;
+    width: 80%;
+  }
+  #hr5Back {
+    left: 40px;
+    top: 135px;
+    width: 80%;
+  }
+  #hr6Back {
+    left: 40px;
+    top: 170px;
+    width: 80%;
+  }
+  #bar6Back {
+    left: 42px;
+    top: 20px;
+    height: 25px;
+  }
+  .panel:hover .panel-body div #bar6Back {
+    width: 85px;
+    background-color: blue;
+  }
+  #bar5Back {
+    left: 42px;
+    top: 55px;
+    height: 25px;
+  }
+  .panel:hover .panel-body div #bar5Back {
+    width: 85px;
+    background-color: blue;
+  }
+  #bar4Back {
+    left: 42px;
+    top: 90px;
+    height: 25px;
+  }
+  .panel:hover .panel-body div #bar4Back {
+    width: 85px;
+    background-color: blue;
+  }
+  #bar3Back {
+    left: 42px;
+    top: 125px;
+    height: 25px;
+  }
+  .panel:hover .panel-body div #bar3Back {
+    width: 85px;
+    background-color: blue;
+  }
+  #bar2Back {
+    left: 42px;
+    top: 160px;
+    height: 25px;
+  }
+  .panel:hover .panel-body div #bar2Back {
+    width: 85px;
+    background-color: blue;
+  }
+  #bar1Back {
+    left: 42px;
+    top: 195px;
+    height: 25px;
+  }
+  .panel:hover .panel-body div #bar1Back {
+    width: 40px;
+    background-color: blue;
+  }
+}
