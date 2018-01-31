@@ -1,5 +1,5 @@
 <?php
-require "../index.html"; // require the file where is the form
+require "../index.php"; // require the file where is the form
 
 // 1- define variables and set to empty values.
 $name = $subject = $email = $message = "";

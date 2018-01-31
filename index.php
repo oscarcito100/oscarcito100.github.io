@@ -3,13 +3,14 @@
 
 <!-- HEAD -->
 <head>
-  <!-- Title on the tab -->
-  <title>Oscar Germade: Web Developer and Trader</title>
-
+  <!-- Title and picture on the tab -->
+  <title>Oscar Germade: Full Stack Web Developer and Trader</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
   <!-- Metadata -->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Oscar Ruben Germade-Gonzalez Rios Portfolio"/>
+  <meta name="description" content="This is the portfolio web page of Oscar Ruben Germade-Gonzalez Rios.
+    His proyects, skills and a little text about himself are containing in the website. Check it out!"/>
   <meta name="author" content="Oscar Ruben Germade-Gonzalez Rios"/>
   <meta name="keywords" content="Oscar Germade portfolio"/>
 
@@ -186,18 +187,23 @@
           <div class="card">
             <img class="img-responsive portfolioImages" src="pictures/canaryWharff.jpg" alt="Lione Messi's Tribute Page" width="500px" height="500px"/>
             <div class="overlay">
-              <p class="overlayText">A new project is coming soon.</p>
-              <p class="overlayText">Thank you for your patience.</p>
-              <a href="" target="_blank" class="btn btn-primary overlayButtons">See project</a>
-              <a href="" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
+              <p class="overlayText">A small proyect of an Udemy course about fetching the user's data from Github.</p>
+              <p class="overlayText">The user must type an Github's username and their Infomation like complete name, location, number of followers,
+                number of repositories, etc will be displayed.</p>
+              <p class="overlayText">If the username does not exist or any name is written, an error message will be shown as an alert message.</p>
+              <a href="https://oscarcito100.github.io/github-finder" target="_blank" class="btn btn-primary overlayButtons">See project</a>
+              <a href="https://github.com/oscarcito100/github-finder" target="_blank" class="btn btn-primary overlayButtons">See code in <i class="fa fa-fw fa-github-square"></i></a>
             </div>
             <div class="caption">
-              <h4 class="projectName" title="project name">WiffiCoffee</h4>
-              <p title="Kind of project">Book Project</p>
+              <h4 class="projectName" title="project name">Github Profile Finder</h4>
+              <p title="Kind of project">Udemy course project</p>
               <div class="logos" title="Technologies used">
                 <img class="img-responsive technologyLogos" src="pictures/logos/htmlLogo.png" alt="HTML 5" width="40px" height="40px"/>
                 <img class="img-responsive technologyLogos" src="pictures/logos/css3Logo.png" alt="CSS 3" width="40px" height="40px"/>
                 <img class="img-responsive technologyLogos" src="pictures/logos/bootstrap.png" alt="Bootstrap 4" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/ajax.png" alt="AJAX" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/api.png" alt="API" width="40px" height="40px"/>
+                <img class="img-responsive technologyLogos" src="pictures/logos/javascript.png" alt="JAVASCRIPT" width="40px" height="40px"/>
               </div>
             </div>
           </div>
@@ -493,7 +499,7 @@
 		          <input type="reset" value="reset" class="btn btn-primary btnInputs"/>
 	          </div>
 	        </form>
-		    </div>
+		    </div> <!--AddHandler fcgid-script .html .htm-->
       </div>
 	  </div>
   </section>
